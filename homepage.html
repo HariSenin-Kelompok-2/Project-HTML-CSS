@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Steam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    gridTemplateColumns: {
+                        'cards': 'repeat(4, minmax(240px, 1fr))',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- OWN CSS -->
+    <link rel="stylesheet" href="homepage.css">
+</head>
+
+<body>
+    <div class="bg-[#1b2838]">
+        <!-- Feature: Browse by Category -->
+        <div class="max-w-[1200px] text-white mx-auto pb-10">
+            <h2 class="uppercase mb-2">Browse by Category</h2>
+            <div class="flex gap-4 overflow-x-auto">
+                <a href="#" class="block grow relative shrink-0">
+                    <img src="https://store.steampowered.com/categories/homepageimage/category/racing?cc=us&l=english"
+                        alt="" class="w-full h-full">
+                    <div class="uppercase absolute right-0 left-0 flex justify-center items-center bottom-10 z-10">
+                        <span class="font-bold text-lg">Racing</span>
+                    </div>
+                    <div class="absolute top-0 right-0 left-0 bottom-0 gradient-red">
+
+                    </div>
+                </a>
+                <a href="#" class="block grow relative shrink-0">
+                    <img src="https://store.steampowered.com/categories/homepageimage/category/anime?cc=us&l=english"
+                        alt="" class="w-full h-full">
+                    <div class="uppercase absolute right-0 left-0 flex justify-center items-center bottom-10 z-10">
+                        <span class="font-bold text-lg">Anime</span>
+                    </div>
+                    <div class="absolute top-0 right-0 left-0 bottom-0 gradient-blue">
+
+                    </div>
+                </a>
+                <a href="#" class="block grow relative shrink-0">
+                    <img src="https://store.steampowered.com/categories/homepageimage/category/puzzle_matching/?cc=us&l=english"
+                        alt="" class="w-full h-full">
+                    <div class="uppercase absolute right-0 left-0 flex justify-center items-center bottom-10 z-10">
+                        <span class="font-bold text-lg">Action</span>
+                    </div>
+                    <div class="absolute top-0 right-0 left-0 bottom-0 gradient-yellow">
+
+                    </div>
+                </a>
+                <a href="#" class="block grow relative shrink-0">
+                    <img src="https://store.steampowered.com/categories/homepageimage/category/simulation?cc=us&l=english"
+                        alt="" class="w-full h-full">
+                    <div class="uppercase absolute right-0 left-0 flex justify-center items-center bottom-10 z-10">
+                        <span class="font-bold text-lg">Simulation</span>
+                    </div>
+                    <div class="absolute top-0 right-0 left-0 bottom-0 gradient-green">
+
+                    </div>
+                </a>
+            </div>
+            <div class="carousel-thumbs flex gap-1 justify-center mt-3">
+                <div class="carousel-thumb focus w-4 h-2 rounded-sm cursor-pointer"></div>
+                <div class="carousel-thumb w-4 h-2 rounded-sm cursor-pointer hover:bg-[#63676f]"></div>
+                <div class="carousel-thumb w-4 h-2 rounded-sm cursor-pointer hover:bg-[#63676f]"></div>
+                <div class="carousel-thumb w-4 h-2 rounded-sm cursor-pointer hover:bg-[#63676f]"></div>
+                <div class="carousel-thumb w-4 h-2 rounded-sm cursor-pointer hover:bg-[#63676f]"></div>
+                <div class="carousel-thumb w-4 h-2 rounded-sm cursor-pointer hover:bg-[#63676f]"></div>
+            </div>
+        </div>
+        <!-- END Feature: Browse by Category -->
+
+        <!-- Feature: Sign In -->
+        <div class="max-w-[1200px] text-white mx-auto text-center bg-[#00000033] p-5 mb-10 rounded-sm">
+            <span class="block">Sign in to view personalized recommendation</span>
+            <button class="block mx-auto p-2 px-4 bg-green-900 rounded-sm my-5">Sign In</button>
+            <span class="block">Or <a href="" class="font-bold">sign up</a> and join Steam for free</span>
+        </div>
+        <!-- END Feature: Sign In -->
+
+        <!-- Feature: Browse Steam (CATEGORY BY NEW RELEASE, SPECIALS, ETC)-->
+        <div class="max-w-[1200px] text-white mx-auto">
+            <h2 class="uppercase mb-2">Browse Steam</h2>
+            <div class="grid grid-cols-cards gap-3 text-center overflow-x-auto">
+                <div
+                    class="bg-gradient-to-r from-blue-400 to-blue-600 px-8 py-6 rounded-sm uppercase font-bold text-lg">
+                    New
+                    Releases</div>
+                <div
+                    class="bg-gradient-to-r from-blue-400 to-blue-600 px-8 py-6 rounded-sm uppercase font-bold text-lg">
+                    Specials</div>
+                <div
+                    class="bg-gradient-to-r from-blue-400 to-blue-600 px-8 py-6 rounded-sm uppercase font-bold text-lg">
+                    Free Games</div>
+                <div
+                    class="bg-gradient-to-r from-blue-400 to-blue-600 px-8 py-6 rounded-sm uppercase font-bold text-lg">
+                    By User Tags</div>
+            </div>
+        </div>
+        <!-- END Feature: Browse Steam -->
+
+        <!-- Feature: Under 90k -->
+        <div class="max-w-[1200px] text-white mx-auto mt-10 pb-10">
+            <div class="flex justify-between mb-2">
+                <h2 class="uppercase">Under RP 90 000</h2>
+                <div>
+                    <button class="uppercase border-white border p-1 px-4">Under RP 90 000</button>
+                    <button class="uppercase border-white border p-1 px-4">Under Rp 45 000</button>
+                </div>
+            </div>
+            <div class="grid grid-cols-cards gap-3 overflow-x-auto">
+                <div>
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/359550/capsule_616x353.jpg?t=1710500518"
+                        alt="">
+                </div>
+                <div>
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/2231380/capsule_616x353.jpg?t=1697654010"
+                        alt="">
+                </div>
+                <div>
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/393380/capsule_616x353.jpg?t=1710257674"
+                        alt="">
+                </div>
+                <div>
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/397540/capsule_616x353.jpg?t=1693524259"
+                        alt="">
+                </div>
+            </div>
+            <div class="carousel-thumbs flex gap-1 justify-center mt-3">
+                <div class="carousel-thumb focus w-4 h-2 rounded-sm cursor-pointer"></div>
+                <div class="carousel-thumb w-4 h-2 rounded-sm cursor-pointer"></div>
+                <div class="carousel-thumb w-4 h-2 rounded-sm cursor-pointer"></div>
+                <div class="carousel-thumb w-4 h-2 rounded-sm cursor-pointer"></div>
+                <div class="carousel-thumb w-4 h-2 rounded-sm cursor-pointer"></div>
+                <div class="carousel-thumb w-4 h-2 rounded-sm cursor-pointer"></div>
+            </div>
+        </div>
+        <!-- END Feature: Under 90k -->
+        </div>
+    </div>
+</body>
+
+</html>

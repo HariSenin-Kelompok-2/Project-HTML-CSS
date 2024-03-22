@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Homepage</title>
+</head>
+
+<body>
+  <main
+    class="flex justify-center items-center flex-col text-white bg-gradient-to-tl from-blue-950 via-blue-950 to-teal-900 bg-no-repeat bg-blue-950">
+    <nav class="md:w-4/5 w-full md:mt-2 bg-gradient-to-r from-sky-700 via-sky-700 to-blue-950">
+      <div class="md:flex md:justify-between">
+        <ul class="p-0 md:flex md:items-center -z-1 md:z-auto md:static">
+          <li class="px-4 h-full content-center md:my-0"><a href="#" class="text-white">Your store</a></li>
+          <li class="px-4 h-full content-center md:my-0"><a href="#" class="text-white">New & Noteworthy</a></li>
+          <li class="px-4 h-full content-center md:my-0"><a href="#" class="text-white">Categories</a></li>
+          <li class="px-4 h-full content-center md:my-0"><a href="#" class="text-white">Points Shop</a></li>
+          <li class="px-4 h-full content-center md:my-0"><a href="#" class="text-white">News</a></li>
+          <li class="px-4 h-full content-center md:my-0"><a href="#" class="text-white">Labs</a></li>
+        </ul>
+        <div class="relative text-white md:w-auto w-full my-2 mr-1">
+          <input
+            class="w-full border border-cyan-400 bg-cyan-800 bg-opacity-95 h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none shadow-inner hover:border-white hover:border-32"
+            type="search" name="search" placeholder="Search">
+          <button type="submit" class="absolute right-0 top-0 my-2 mr-1 shadow-2xl">
+            <svg class="text-transparent h-6 w-6 fill-current" viewBox="0 0 54 53" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.5" y="0.5" width="53" height="52" rx="1.5" fill="#63B5E4" stroke="#84C8EE" />
+              <path
+                d="M25 32.2166L33.3018 25L42.4866 35.5659C43.2113 36.3996 43.123 37.6628 42.2893 38.3875L37.0064 42.9799C36.1727 43.7045 34.9095 43.6162 34.1848 42.7826L25 32.2166Z"
+                fill="#2A3E5A" />
+              <circle cx="21" cy="19" r="11" stroke="#2A3E5A" stroke-width="2" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="flex flex-col mt-5 px-2 w-4/5">
+      <h2 class="text-white">FEATURED & RECOMMENDED</h2>
+      <div class="flex flex-row h-full content-center w-full">
+        <div class="lg:w-2/3">
+          <img class="w-full"
+            src="https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/capsule_616x353.jpg?t=1710268442"
+            alt="Game Apex Legend">
+        </div>
+        <div class="bg-[#0B151E] md:block hidden lg:w-1/3">
+          <h3 class="text-white my-3 ml-3">Apex Legends™</h3>
+          <div class="grid grid-cols-2 gap-y-3 gap-x-4 mr-2">
+            <img class="w-full"
+              src="https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/ss_b5051a24edf949582756c313eebf6f61582ce25f.116x65.jpg?t=1708706824">
+            <img class="w-full"
+              src="https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/ss_215051168b1b52177d802ab36e40a6f874db404a.116x65.jpg?t=1708706824">
+            <img class="w-full"
+              src="https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/ss_a47a8c9b09393bd4cddfeb2891beb4d1eafb2897.116x65.jpg?t=1708706824">
+            <img class="w-full"
+              src="https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/ss_c75144f4a9c3771806a72ff939752c15456aa557.116x65.jpg?t=1708706824">
+          </div>
+          <h4 class="mt-2 ml-3">Now Available</h4>
+          <p class="mt-1 ml-3">Free to Play</p>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5 px-2 w-4/5">
+      <h2>SPECIAL OFFERS</h2>
+      <div class="grid grid-cols-2 w-full gap-5 md:grid-cols-3">
+        <div class="bg-gradient-to-tl from-sky-600 to-sky-700">
+          <img class="w-full h-3/5"
+            src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/capsule_616x353.jpg?t=1698860631"
+            alt="Spesial Offers">
+          <div class="gap-10">
+            <h4>MIDWALK DEAL</h4>
+            <p>Offers ends 30 mar @ 12.00am</p>
+          </div>
+        </div>
+        <div class="bg-gradient-to-tl from-sky-600 to-sky-700">
+          <img class="w-full h-3/5"
+            src="https://cdn.cloudflare.steamstatic.com/steam/apps/578080/capsule_616x353.jpg?t=1710727439"
+            alt="Spesial Offers">
+          <div class="gap-10">
+            <h4>MIDWALK DEAL</h4>
+            <p>Offers ends 30 mar @ 12.00am</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2">
+          <div class="bg-[#ACDBF4] text-black md:block hidden">
+            <img class="w-full h-3/5"
+              src="https://cdn.cloudflare.steamstatic.com/steam/apps/1498570/capsule_616x353.jpg?t=1701397336" alt="">
+            <h5 class="my-1">Today's Deal!</h5>
+          </div>
+          <div class="bg-[#ACDBF4] text-black md:block hidden">
+            <img class="w-full h-3/5"
+              src="https://cdn.cloudflare.steamstatic.com/steam/apps/1498570/capsule_616x353.jpg?t=1701397336" alt="">
+            <h5 class="my-1">Today's Deal!</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

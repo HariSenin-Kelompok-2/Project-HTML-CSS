@@ -65,3 +65,7 @@ body {
 .gradient-game-cards:hover {
     background: linear-gradient(to right, rgba(56, 107, 135, 1) 5%, rgba(68, 130, 163, 1) 95%);
 }
+
+.gradient-deals {
+    background: linear-gradient(to bottom, #ffffff 5%, #abdaf4 95%);
+}

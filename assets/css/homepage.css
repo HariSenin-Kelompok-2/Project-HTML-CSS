@@ -62,3 +62,6 @@ body {
 .gradient-game-cards {
     background: linear-gradient(-45deg, rgba(64, 121, 153, 1) 5%, rgba(42, 62, 89, 1) 95%);
 }
+.gradient-game-cards:hover {
+    background: linear-gradient(to right, rgba(56, 107, 135, 1) 5%, rgba(68, 130, 163, 1) 95%);
+}

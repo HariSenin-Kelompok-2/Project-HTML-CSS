@@ -14,7 +14,11 @@
                         'cards': 'repeat(4, minmax(240px, 1fr))',
                     },
                     screens: {
-                        'lg': { 'max': '1080px' }
+                        'lg': { 'max': '1080px' },
+                    },
+                    colors: {
+                        'discount': '#BEEE11',
+                        'discountOriginalPrice': '#738895',
                     }
                 }
             }
@@ -125,22 +129,55 @@
                         000</button>
                 </div>
             </div>
-            <div class="grid grid-cols-cards gap-3 overflow-x-auto">
-                <div>
-                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/359550/capsule_616x353.jpg?t=1710500518"
+            <div class="grid grid-cols-cards gap-3 overflow-x-auto pb-5">
+                <div class="gradient-game-cards text-xs">
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/2708450/header_292x136.jpg?t=1710877806"
                         alt="">
+                    <div class="p-1 flex">
+                        <div class="px-1 py-0.5 text-discount bg-[#4c6b22]">
+                            <span class=" ">-20%</span>
+                        </div>
+                        <div class="px-1 py-0.5 bg-[#141f2c66]">
+                            <span
+                                class="text-discountOriginalPrice before:content-[''] relative before:left-0 before:right-0 before:border-b before:absolute before:top-[43%] before:-skew-y-[8deg] before:border-discountOriginalPrice">Rp
+                                90
+                                999</span>
+                            <span class="text-discount">Rp 72 799</span>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/2231380/capsule_616x353.jpg?t=1697654010"
+                <div class="gradient-game-cards text-xs">
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/739630/header_292x136.jpg?t=1702309974"
                         alt="">
+                    <div class="p-1 flex">
+                        <div class="px-1 py-0.5 bg-[#141f2c66]">
+                            <span class="text-white">Rp 89 999</span>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/393380/capsule_616x353.jpg?t=1710257674"
+                <div class="gradient-game-cards text-xs">
+                    <img src="https://cdn.akamai.steamstatic.com/steam/subs/401587/header_292x136.jpg?t=1574100600"
                         alt="">
+                    <div class="p-1 flex">
+                        <div class="px-1 py-0.5 text-discount bg-[#4c6b22]">
+                            <span class=" ">-90%</span>
+                        </div>
+                        <div class="px-1 py-0.5 bg-[#141f2c66]">
+                            <span
+                                class="text-discountOriginalPrice before:content-[''] relative before:left-0 before:right-0 before:border-b before:absolute before:top-[43%] before:-skew-y-[8deg] before:border-discountOriginalPrice">Rp
+                                569 000</span>
+                            <span class="text-discount">Rp 56 900</span>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/397540/capsule_616x353.jpg?t=1693524259"
+                <div class="gradient-game-cards text-xs">
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/1943950/header_292x136.jpg?t=1710893725"
                         alt="">
+                    <div class="p-1 flex">
+                        <div class="px-1 py-0.5 bg-[#141f2c66]">
+                            <span class="text-white">Rp 69 999</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="carousel-thumbs flex gap-1 justify-center mt-3">

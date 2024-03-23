@@ -1,14 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steam Login</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/login.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/de991fd127.js" crossorigin="anonymous"></script>
 </head>
+
 <body class="bg-gray-900">
-    <div class="container mx-auto mt-16 p-8 lg:w-2/3">
+    <!-- header -->
+    <div class="bg-[#171a21] h-full p-2 md:p-5 w-full">
+        <div class="grid grid-cols-10 lg:grid-cols-4 text-center text-white justify-between">
+            <div class="lg:hidden col-span-1 flex justify-center items-center">
+                <!-- Hamburger Button -->
+                <button id="hamburger-btn" class="text-white focus:outline-none">
+                    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                </button>
+            </div>
+            <div class="flex justify-center items-center lg:justify-end col-span-9 lg:col-span-1">
+                <img src="assets/login/steamlogo.png" class="w-[9vh] sm:w-[10vh] md:w-[20vh]" alt="" />
+            </div>
+
+            <div
+                class="lg:block md-[18px] text-[0.8rem] mt-[0.5vh] md:text-[2vw] lg:text-[1.2vw] lg:col-span-2 hidden sm:hidden md:hidden">
+                <a href="" class="mr-2 hover:text-[#38a4d2]">STORE</a>
+                <a href="" class="mr-2 hover:text-[#38a4d2]">COMMUNITY</a>
+                <a href="" class="mr-2 hover:text-[#38a4d2]">ABOUT</a>
+                <a href="" class="mr-2 hover:text-[#38a4d2]">SUPPORT</a>
+            </div>
+            <div class="mt-[0.001rem] hidden sm:hidden md:hidden lg:block">
+                <div class="flex justify-start space-x-2">
+                    <button class="green-install p-1 px-2 text-black">
+                        <i class="fa-solid fa-download mr-2"></i>install steam
+                    </button>
+                    <a href="login.html">Login</a>
+                    <a href="register.html">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header end -->
+    <!-- Hamburger Menu -->
+    <div id="mobile-menu" class="bg-[#171a21] text-[#afb8b6] fixed top-0 left-0 h-full z-50">
+        <div class="grid grid-rows-4 gap-4">
+            <a href="login.html" class="text-[1.2rem] p-4 border-b-[0.1vh] border-[#bcbcbc]">Login</a>
+            <a href="#" class="text-[1.2rem] p-4 border-b-[0.1vh] border-[#bcbcbc]">STORE</a>
+            <a href="#" class="text-[1.2rem] p-4 border-b-[0.1vh] border-[#bcbcbc]">COMMUNITY</a>
+            <a href="#" class="text-[1.2rem] p-4 border-b-[0.1vh] border-[#bcbcbc]">SUPPORT</a>
+            <p class="px-2 text-[1rem] text-[#6f7071]">Change language</p>
+            <p class="px-2 text-[1rem] text-[#6f7071]">Get the Steam Mobile App</p>
+            <p class="px-2 text-[1rem] text-[#6f7071]">View Desktop website</p>
+        </div>
+        <!-- Footer -->
+        <footer class="w-full absolute bottom-0 mb-4 p-4">
+            <div class="h-full text-[0.6rem] lg:text-[18px]">
+                <div class="w-[13vw] md:w-auto grid md:justify-end lg:mr-2">
+                    <img src="assets/footer/logo_valve_footer.png" class="w-full md:w-[100px]" alt="" />
+                </div>
+                <div>
+                    <p>
+                        &copy; Valve Corporation. All rights reserved. All trademarks are
+                        property of their respective owners in the US and other countries.
+                        <a href="#" class="hover:text-white">Privacy Policy</a>
+                        <a href="#" class="hover:text-white">Legal</a>
+                        <a href="#" class="hover:text-white">Steam Subscriber Agreement</a>
+                        <a href="#" class="hover:text-white">Refunds</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+    </div>
+    <!-- Hamburger Menu end -->
+    <div class="container mx-auto mt-7 p-8 lg:w-2/3">
         <!-- Login Container -->
         <div class="login-container flex flex-col md:flex-row">
             <div class="login-form w-full md:mr-6">
@@ -16,13 +85,19 @@
                 <form class="space-y-4">
                     <div>
                         <label for="account_name">Sign in with Account Name:</label>
-                        <input type="text" id="account_name" name="account_name" class="w-full rounded-md bg-gray-700 border-none px-4 py-2" placeholder="Enter your account name" required>
+                        <input type="text" id="account_name" name="account_name"
+                            class="w-full rounded-md bg-gray-700 border-none px-4 py-2"
+                            placeholder="Enter your account name" required>
                     </div>
                     <div>
                         <label for="password">Password:</label>
-                        <input type="password" id="password" name="password" class="w-full rounded-md bg-gray-700 border-none px-4 py-2" placeholder="Enter your password" required>
+                        <input type="password" id="password" name="password"
+                            class="w-full rounded-md bg-gray-700 border-none px-4 py-2"
+                            placeholder="Enter your password" required>
                     </div>
-                    <button type="submit" class="w-full bg-blue-500 text-white rounded-md py-2 px-4 hover:bg-blue-600 transition duration-300">Sign In</button>
+                    <button type="submit"
+                        class="w-full bg-blue-500 text-white rounded-md py-2 px-4 hover:bg-blue-600 transition duration-300">Sign
+                        In</button>
                 </form>
                 <div class="mt-4 text-center">
                     <a href="#" class="text-blue-400 hover:underline">Forgot password?</a>
@@ -34,10 +109,12 @@
                 <a href="#" class="text-blue-400 hover:underline">Sign in with QR</a>
                 <!-- QR Code Image -->
                 <div>
-                    <img src="https://www.hallmarknameplate.com/wp-content/uploads/2022/08/qr-code-print5-293x300.png" alt="QR Code">
+                    <img src="https://www.hallmarknameplate.com/wp-content/uploads/2022/08/qr-code-print5-293x300.png"
+                        alt="QR Code">
                 </div>
                 <!-- Paragraf for Mobile App -->
-                <p class="text-white mt-4">Use the <a href="#" class="underline">Steam Mobile App</a> to sign in via QR code</p>
+                <p class="text-white mt-4">Use the <a href="#" class="underline">Steam Mobile App</a> to sign in via QR
+                    code</p>
             </div>
         </div>
 
@@ -45,9 +122,73 @@
         <div class="register-section mt-8 flex flex-col md:flex-row items-center justify-center">
             <div class="md:w-1/2 text-white text-center md:text-left">
                 <p>Don't have an account?</p>
-                <button class="bg-blue-500 text-white rounded-md py-2 px-4 hover:bg-blue-600 transition duration-300">Create one now!</button>
+                <a href="register.html">
+                    <button
+                        class="bg-blue-500 text-white rounded-md py-2 px-4 hover:bg-blue-600 transition duration-300">Create
+                        one now!</button>
+                </a>
             </div>
             <div class="md:w-1/2 text-white text-center md:text-right mt-4 md:mt-0">
                 <p>It's free and easy. Discover thousands of games to play with millions of new friends.</p>
             </div>
-        </div
+        </div>
+
+    </div>
+    <!-- Footer -->
+    <div class="bg-[#171A21] mt-10 pb-10 px-10 smFooter:hidden font-sans">
+        <section>
+            <div class="h-[2rem]"></div>
+            <hr class="mb-2" />
+        </section>
+        <section>
+            <div class="flex h-[4rem] gap-1 bg-[171A21]">
+                <div class="w-1/6 my-auto">
+                    <div class="mr-3">
+                        <img src="./assets/img/logo-footer/valve.png" />
+                    </div>
+                </div>
+                <div class="w-4/6">
+                    <div class="text-gray-400">
+                        © 2024 Valve Corporation. All rights reserved. All trademarks are
+                        property of their respective owners in the US and other countries.
+                        VAT included in all prices where applicable.
+                    </div>
+                </div>
+                <div class="w-1/6 my-auto">
+                    <div class="flex justify-end">
+                        <img src="./assets/img/logo-footer/logo_steam_footer.png" />
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-8" />
+        </section>
+        <section>
+            <div class="flex justify-between mt-4">
+                <div class="hover:text-white border-r-2 border-gray-600 text-gray-400 text-center w-full">
+                    About Valve
+                </div>
+                <div class="hover:text-white border-r-2 border-gray-600 w-full text-gray-400 text-center">
+                    Steamworks
+                </div>
+                <div class="hover:text-white border-r-2 border-gray-600 w-full text-gray-400 text-center">
+                    Jobs
+                </div>
+                <div class="hover:text-white border-r-2 border-gray-600 w-full text-gray-400 text-center">
+                    Support
+                </div>
+                <div class="hover:text-white border-r-2 border-gray-600 w-full text-gray-400 text-center">
+                    Gift Cards
+                </div>
+                <div class="hover:text-white border-r-2 border-gray-600 w-full text-gray-400 text-center">
+                    Steam
+                </div>
+                <div class="hover:text-white w-full text-center text-gray-400">
+                    @steam
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

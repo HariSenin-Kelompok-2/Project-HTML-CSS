@@ -35,7 +35,7 @@
 
 <body>
     <!-- header -->
-    <div class="bg-[#171a21] h-full p-2 md:p-5 w-full">
+    <header class="bg-[#171a21] h-full p-2 md:p-5 w-full">
         <div class="grid grid-cols-10 lg:grid-cols-4 text-center text-white justify-between items-center">
             <div class="lg:hidden col-span-1 flex justify-center items-center">
                 <!-- Hamburger Button -->
@@ -64,10 +64,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </header>
     <!-- header end -->
     <!-- Hamburger Menu -->
-    <div id="mobile-menu" class="bg-[#171a21] text-[#afb8b6] fixed top-0 left-0 h-full z-50">
+    <section id="mobile-menu" class="bg-[#171a21] text-[#afb8b6] fixed top-0 left-0 h-full z-50">
         <div class="grid grid-rows-4 gap-4">
             <a href="login.html" class="text-[1.2rem] p-4 border-b-[0.1vh] border-[#bcbcbc]">Login</a>
             <a href="#" class="text-[1.2rem] p-4 border-b-[0.1vh] border-[#bcbcbc]">STORE</a>
@@ -96,12 +96,12 @@
             </div>
         </footer>
         <!-- Footer end -->
-    </div>
+    </section>
     <!-- Hamburger Menu end -->
     <!-- Andi -->
     <div class="flex justify-center items-center flex-col text-white bg-no-repeat bg-[#1b2838]">
         <!-- Feature: NavBar -->
-        <nav class="md:w-4/5 w-full md:mt-4 bg-gradient-to-r from-sky-700 via-sky-700 to-blue-950 shadow-lg rounded-sm">
+        <nav class="md:w-4/5 w-full md:mt-4 bg-gradient-to-r from-sky-700 via-sky-700 to-blue-950 shadow-md rounded-sm">
             <div class="md:flex md:justify-between">
                 <ul class="p-0 md:flex md:items-center -z-1 md:z-auto md:static">
                     <li class="px-4 h-full content-center md:my-0"><a href="#" class="text-white">Your store</a></li>
@@ -132,7 +132,7 @@
         <!-- End feature: navbar -->
 
         <!-- Feature: Recommended -->
-        <div class="mt-7 w-4/5">
+        <section class="mt-7 w-4/5">
             <h2 class="text-white mb-2">FEATURED & RECOMMENDED</h2>
             <div class="flex flex-row h-full content-center w-full">
                 <div class="lg:w-2/3">
@@ -158,11 +158,11 @@
                     <p class="mt-1 ml-3">Free to Play</p>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- End feature: Recommended -->
 
         <!-- Feature: Special Offers -->
-        <div class="mt-5 w-4/5">
+        <section class="mt-5 w-4/5">
             <h2 class="mb-2">SPECIAL OFFERS</h2>
             <div class="grid grid-cols-2 w-full gap-5 md:grid-cols-3">
                 <a href="cs2ProdDetail.html" class="bg-gradient-to-tl from-sky-600 to-sky-700">
@@ -198,14 +198,14 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- End Feature: Special Offers -->
     </div>
 
     <!-- Fariz -->
     <div class="bg-[#1b2838] pt-10 px-6">
         <!-- Feature: Browse by Category -->
-        <div class="max-w-[1100px] text-white mx-auto mb-16">
+        <section class="max-w-[1100px] text-white mx-auto mb-16">
             <h2 class="uppercase mb-5 tracking-wider">Browse by Category</h2>
             <div class="flex gap-4 overflow-x-auto pb-5 tracking-widest text-lg font-semibold">
                 <a href="#" class="block grow relative shrink-0">
@@ -257,11 +257,12 @@
                 <div class="carousel-thumb w-4 h-2 rounded-sm cursor-pointer"></div>
                 <div class="carousel-thumb w-4 h-2 rounded-sm cursor-pointer"></div>
             </div>
-        </div>
+        </section>
         <!-- END Feature: Browse by Category -->
 
         <!-- Feature: Sign In -->
-        <div class="max-w-[1100px] mx-auto text-center bg-[#00000033] p-6 mb-10 rounded-sm text-[#8f98a0] font-normal">
+        <section
+            class="max-w-[1100px] mx-auto text-center bg-[#00000033] p-6 mb-10 rounded-sm text-[#8f98a0] font-normal">
             <span class="block mb-4">Sign in to view personalized recommendation</span>
             <a href="login.html"
                 class="inline-block rounded-sm sign-in-btn text-[#D2E885] mb-6 p-[1px] hover:text-white">
@@ -271,11 +272,11 @@
                 Steam
                 for
                 free</span>
-        </div>
+        </section>
         <!-- END Feature: Sign In -->
 
         <!-- Feature: Browse Steam (CATEGORY BY NEW RELEASE, SPECIALS, ETC)-->
-        <div class="max-w-[1100px] text-white mx-auto tracking-wider">
+        <section class="max-w-[1100px] text-white mx-auto tracking-wider">
             <h2 class="uppercase mb-2">Browse Steam</h2>
             <div class="grid grid-cols-cards gap-3 text-center font-semibold lgNewRelease:grid-cols-2">
                 <a href="#"
@@ -290,11 +291,11 @@
                     User
                     Tags</a>
             </div>
-        </div>
+        </section>
         <!-- END Feature: Browse Steam -->
 
         <!-- Feature: Under 90k -->
-        <div class="max-w-[1100px] text-white mx-auto mt-10 pb-10">
+        <section class="max-w-[1100px] text-white mx-auto mt-10 pb-10">
             <div class="flex justify-between items-end mb-1.5">
                 <h2 class="uppercase tracking-wider flex-1">Under RP 90 000</h2>
                 <div class="flex-1 text-right">
@@ -307,7 +308,7 @@
                 </div>
             </div>
             <div class="grid grid-cols-cards gap-3 overflow-x-auto pb-3">
-                <a href="ohDeerProdDetail.html" class="gradient-game-cards text-xs">
+                <a href="ohDeerProdDetail.html" class="gradient-game-cards text-xs shadow-lg">
                     <img src="https://cdn.akamai.steamstatic.com/steam/apps/2708450/header_292x136.jpg?t=1710877806"
                         alt="">
                     <div class="p-1 flex">
@@ -323,7 +324,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="phasmoProdDetail.html" class="gradient-game-cards text-xs">
+                <a href="phasmoProdDetail.html" class="gradient-game-cards text-xs shadow-lg">
                     <img src="https://cdn.akamai.steamstatic.com/steam/apps/739630/header_292x136.jpg?t=1702309974"
                         alt="">
                     <div class="p-1 flex">
@@ -332,7 +333,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="starwarsProdDetail.html" class="gradient-game-cards text-xs">
+                <a href="starwarsProdDetail.html" class="gradient-game-cards text-xs shadow-lg">
                     <img src="https://cdn.akamai.steamstatic.com/steam/subs/401587/header_292x136.jpg?t=1574100600"
                         alt="">
                     <div class="p-1 flex">
@@ -347,7 +348,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="backroomProdDetail.html" class="gradient-game-cards text-xs">
+                <a href="backroomProdDetail.html" class="gradient-game-cards text-xs shadow-lg">
                     <img src="https://cdn.akamai.steamstatic.com/steam/apps/1943950/header_292x136.jpg?t=1710893725"
                         alt="">
                     <div class="p-1 flex">
@@ -365,7 +366,7 @@
                 <div class="carousel-thumb w-4 h-2 rounded-sm cursor-pointer"></div>
                 <div class="carousel-thumb w-4 h-2 rounded-sm cursor-pointer"></div>
             </div>
-        </div>
+        </section>
         <!-- END Feature: Under 90k -->
     </div>
 
@@ -459,7 +460,7 @@
         </div>
 
         <!-- Footer -->
-        <div class="bg-[#171A21] pb-10 px-10 smFooter:hidden font-sans">
+        <footer class="bg-[#171A21] pb-10 px-10 smFooter:hidden font-sans">
             <section>
                 <div class="h-[2rem]"></div>
                 <hr class="mb-2" />
@@ -511,7 +512,7 @@
                     </div>
                 </div>
             </section>
-        </div>
+        </footer>
     </div>
     <script src="script.js"></script>
 </body>

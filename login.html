@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/login.css">
+</head>
+<body class="bg-gray-900">
+    <div class="container mx-auto mt-16 p-8 lg:w-2/3">
+        <!-- Login Container -->
+        <div class="login-container flex flex-col md:flex-row">
+            <div class="login-form w-full md:mr-6">
+                <h2>Sign In</h2>
+                <form class="space-y-4">
+                    <div>
+                        <label for="account_name">Sign in with Account Name:</label>
+                        <input type="text" id="account_name" name="account_name" class="w-full rounded-md bg-gray-700 border-none px-4 py-2" placeholder="Enter your account name" required>
+                    </div>
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" class="w-full rounded-md bg-gray-700 border-none px-4 py-2" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-500 text-white rounded-md py-2 px-4 hover:bg-blue-600 transition duration-300">Sign In</button>
+                </form>
+                <div class="mt-4 text-center">
+                    <a href="#" class="text-blue-400 hover:underline">Forgot password?</a>
+                </div>
+            </div>
+            <!-- Sign in with QR -->
+            <div class="login-with-qr flex flex-col justify-center items-center mt-6 md:mt-0">
+                <p class="text-blue-400">Or</p>
+                <a href="#" class="text-blue-400 hover:underline">Sign in with QR</a>
+                <!-- QR Code Image -->
+                <div>
+                    <img src="https://www.hallmarknameplate.com/wp-content/uploads/2022/08/qr-code-print5-293x300.png" alt="QR Code">
+                </div>
+                <!-- Paragraf for Mobile App -->
+                <p class="text-white mt-4">Use the <a href="#" class="underline">Steam Mobile App</a> to sign in via QR code</p>
+            </div>
+        </div>
+
+        <!-- Register Section -->
+        <div class="register-section mt-8 flex flex-col md:flex-row items-center justify-center">
+            <div class="md:w-1/2 text-white text-center md:text-left">
+                <p>Don't have an account?</p>
+                <button class="bg-blue-500 text-white rounded-md py-2 px-4 hover:bg-blue-600 transition duration-300">Create one now!</button>
+            </div>
+            <div class="md:w-1/2 text-white text-center md:text-right mt-4 md:mt-0">
+                <p>It's free and easy. Discover thousands of games to play with millions of new friends.</p>
+            </div>
+        </div

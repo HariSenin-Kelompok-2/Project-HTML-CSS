@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/productDetailStyles.css">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="../assets/productDetailStyles.css">
+    <link rel="stylesheet" href="../assets/style.css">
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="assets/style.css"
@@ -14,7 +14,7 @@
       crossorigin="anonymous">
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="script.js"></script>
+    <script src="../assets/js/script.js"></script>
     <script>
         tailwind.config = {
           theme: {
@@ -36,7 +36,7 @@
           }
         }
       </script>
-    <title>Kayak VR: Mirage on Steam</title>
+    <title>Blade and Sorcery on Steam</title>
 </head>
 <body>
      <!-- header -->
@@ -54,7 +54,7 @@
             class="flex justify-center items-center lg:justify-end col-span-9 lg:col-span-1"
           >
             <img
-              src="assets/login/steamlogo.png"
+              src="../assets/login/steamlogo.png"
               class="w-[9vh] sm:w-[10vh] md:w-[20vh]"
               alt=""
             />
@@ -63,7 +63,7 @@
           <div
             class="lg:block md-[18px] text-[0.8rem] mt-[0.5vh] md:text-[2vw] lg:text-[1.2vw] lg:col-span-2 hidden sm:hidden md:hidden"
           >
-            <a href="index.html" class="mr-2 hover:text-[#38a4d2]">STORE</a>
+            <a href="../homepage.html" class="mr-2 hover:text-[#38a4d2]">STORE</a>
             <a href="" class="mr-2 hover:text-[#38a4d2]">COMMUNITY</a>
             <a href="" class="mr-2 hover:text-[#38a4d2]">ABOUT</a>
             <a href="" class="mr-2 hover:text-[#38a4d2]">SUPPORT</a>
@@ -107,7 +107,7 @@
         <div class="h-full text-[0.6rem] lg:text-[18px]">
           <div class="w-[13vw] md:w-auto grid md:justify-end lg:mr-2">
             <img
-              src="assets/footer/logo_valve_footer.png"
+              src="../assets/footer/logo_valve_footer.png"
               class="w-full md:w-[100px]"
               alt=""
             />
@@ -129,11 +129,18 @@
       <!-- Footer end -->
     </div>
 <!-- Hamburger Menu end -->
-    <div id="container" class="bg-steamBg text-headerFontColor p-60 pt-0">
+    <div id="container" class="bg-steamBg text-headerFontColor p-60 pt-2">
+        <!-- Cart -->
+        <div class="flex justify-end text-xs mb-1">
+            <a href="cart.html" class="bg-[#5c7e10] px-6 py-1 text-center hover:bg-[#7ea64b] text-white">
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i> <span>Cart (1)</span>
+            </a>
+        </div>
+        <!-- End Cart -->
         <div class="navBar">
             <div class="grid grid-cols-3 p-1 md:p-4">
               <div class="col-span-2">
-                <a href="homepage.html" class="mr-2 hover:text-[#38a4d2]">Your Store</a>
+                <a href="../homepage.html" class="mr-2 hover:text-[#38a4d2]">Your Store</a>
                 <a href="" class="mr-2 hover:text-[#38a4d2]">New & Noteworthy</a>
                 <a href="" class="mr-2 hover:text-[#38a4d2]">Categories</a>
                 <a href="" class="mr-2 hover:text-[#38a4d2]">Point Shop</a>
@@ -155,23 +162,22 @@
         <div id="directory" class="text-fontColor text-sm mt-16">
             <p><a href="">All Games</a> &#62;
                 <a href="">Action Games</a> &#62;
-                <a href="">Kayak VR: Mirage</a>
+                <a href="">Blade and Sorcery</a>
             </p>
         </div>
     <div id="gameName" class="flex justify-between">
-        <h1 class="text-3xl mb-4">Kayak VR: Mirage</h1>
+        <h1 class="text-3xl mb-4">Blade and Sorcery</h1>
             <a href="">
                 <button class="bg-buttonColorBg text-buttonColor pt-2 pr-4 pb-2 pl-4 rounded-sm">Community Hub</button>
             </a>
 </div>
     <div id="headerBg" class="flex flex-row-reverse pb-4 max-w-full max-h-full">
         <div id="sideDesc" class="ml-4 min-w-60 w-screen max-w-full max-h-full">
-            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1683340/header.jpg?t=1708002651" alt="header" class="min-w-full">
-            <p class="mobileH1 text-3xl mt-4">Kayak VR: Mirage</p>
+            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/629730/header.jpg?t=1701774481" alt="header" class="min-w-full">
+            <p class="mobileH1 text-3xl mt-4">Blade and Sorcery</p>
                 <div class="quickDesc">
-                    <p class="text-sm my-2">Kayak VR: Mirage is a jaw-dropping and exhilarating journey through beautiful locations, 
-                        made for Virtual Reality. Maneuver our fully physically accurate kayak around checkpoints and crown yourself 
-                        the fastest, or take it easy and use the free roam mode and enjoy the scenery.
+                    <p class="text-sm my-2">Blade & Sorcery is a built-for-VR medieval fantasy sandbox with full physics driven melee, 
+                        ranged and magic combat. Become a powerful warrior, ranger or sorcerer and devastate your enemies.
                     </p>
                 </div>
             <div class="reviews flex text-xs">
@@ -183,33 +189,33 @@
                     <p><a href="">Publisher:</a></p>
                 </div>
                 <div class="reviewsScore ml-4 text-buttonColor flex flex-col">
-                    <span>Very Positive</span>
-                    <span>Very Positive</span>
-                    <span class="text-fontColor leading-8">12 Jul, 2022</span>
-                    <span>Better Than Life</span>
-                    <span>Better Than Life</span>
+                    <span>Overwhemingly Positive</span>
+                    <span>Overwhemingly Positive</span>
+                    <span class="text-fontColor leading-8">11 Dec, 2018</span>
+                    <span>WarpFrog</span>
+                    <span>WarpFrog</span>
                 </div>
             </div>
             <div class="genreTag mt-2 mb-2 text-xs w-full">
                 <p class="text-fontColor">Popular user-defined tags for this product:</p>
                     <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">VR</a></span>
-                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Racing</a></span>
-                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Simulation</a></span>
-                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Realistic</a></span>
-                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Physics</a></span>
+                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">SwordPlay</a></span>
+                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Action</a></span>
+                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Moddable</a></span>
+                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Gore</a></span>
                     <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">&#43;</a></span>
             </div>
         </div>
         <div id="mainVideo" class="max-w-full max-h-full">
             <video controls>
-                <source src="https://cdn.cloudflare.steamstatic.com/steam/apps/256895866/movie_max_vp9.webm?t=1683187598" type="video/webm">
+                <source src="https://cdn.cloudflare.steamstatic.com/steam/apps/256857498/movie_max_vp9.webm?t=1635255825" type="video/webm">
             </video>
             <div class="thumbnails flex justify-between gap-1 mt-1 overflow-scroll">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1683340/ss_ba7913e753f91ff41b8f780f36661e86bf0b2f78.116x65.jpg?t=1708002651">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1683340/ss_3fdc8e9723ae71a93b0b78bffb4e527791d5ab39.116x65.jpg?t=1708002651">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1683340/ss_682b0abb888fb7218804f1a2943b20d30400a1df.116x65.jpg?t=1708002651">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1683340/ss_2acdac4f89a19fd9ef78b19a491a9cec0423d5dc.116x65.jpg?t=1708002651">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1683340/ss_9b0876f30d096bc462fa148a46ab2397a9bfcd89.116x65.jpg?t=1708002651">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/629730/ss_1fab2d23d93d5b6e30a097b15d1854d65a7b5726.116x65.jpg?t=1701774481">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/629730/ss_aa84f60594357440c74c7a93e512a67547ba1627.116x65.jpg?t=1701774481">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/629730/ss_98cb3b4ef9981f001a4cd36a7d1ed0d166635a62.116x65.jpg?t=1701774481">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/629730/ss_857bd0df98cc1c86a680689e552fbd0393df4060.116x65.jpg?t=1701774481">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/629730/ss_e2eb4990df02020a6eabd2b3afb67d8e88bdf2db.116x65.jpg?t=1701774481">
             </div>
     </div>
     </div>
@@ -556,11 +562,12 @@
             </div>
             </div>
             <div class="prodGenre p-5 w-full text-xs">
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Title:</span>Kayak VR: Mirage</p>
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Genre:</span><a href="">Adventure, Casual, Indie, Racing, Simulation, Sports</a></p>
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Developer:</span> <a href="">Better Than Life</a></p>
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Publisher:</span> <a href="">Better Than Life</a></p>
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Release Date:</span>12 Jul, 2022</p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Title:</span>Blade and Sorcery</p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Genre:</span><a href="">Action, Adventure, Indie, RPG, Simulation, Early Access</a></p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Developer:</span> <a href="">WarpFrog</a></p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Publisher:</span> <a href="">WarpFrog</a></p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Release Date:</span> 11 Dec, 2018</p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Early Access Release Date:</span> 11 Dec, 2018</p>
                     <div class="genreButtonHeader">
                         <div class="genreButton bg-blueItemBg text-buttonColor p-1 mb-1 rounded-sm">
                             <span><a href="" class="text-buttonColor">Visit the website</a></span>
@@ -611,10 +618,10 @@
     </div>
 <div id="cardWrapper">
     <div class="card p-4 mt-6 mb-2 rounded relative">
-            <h2 class="text-2xl font-semibold">Buy Kayak VR: Mirage</h2>
+            <h2 class="text-2xl font-semibold">Buy Blade & Sorcery</h2>
         <div class="gamePurchaseContainer text-base text-right absolute right-1">
             <div class="gamePurchaseButton py-2.5 pl-4 pr-0 bg-black rounded">
-                <span>Rp 189 999<span class="gamePurchase m-1 bg-buyBg py-2 px-4 rounded"><a href="">Add to Cart</a></span></span>
+                <span>Rp 108 999<span class="gamePurchase m-1 bg-buyBg py-2 px-4 rounded"><a href="">Add to Cart</a></span></span>
             </div>
         </div>
     </div>
@@ -623,10 +630,10 @@
     </div>
 <div id="wrapper">
     <div class="w-full h-full">
-        <img src="https://clan.cloudflare.steamstatic.com/images/40876185/0d0346856f952e300d841e54b3725d70cfe5335c_400x225.png" alt="">
+        <img src="https://clan.cloudflare.steamstatic.com/images/33834682/ac248746272da65b73b1a72e72cdc442a24eeab0_400x225.jpg" alt="">
     </div>
     <div class="w-full h-full">
-        <img src="https://clan.cloudflare.steamstatic.com/images/40876185/0d0346856f952e300d841e54b3725d70cfe5335c_400x225.png" alt="">
+        <img src="https://clan.cloudflare.steamstatic.com/images/33834682/8534c27cb12e5476315d8bf9a37dd2ca0ff9b39d_400x225.jpg" alt="">
     </div>
 </div>
     <div class="moreButton flex mt-4 mb-8">
@@ -653,37 +660,24 @@
         <a href=""><p class="text-xs rounded-sm py-0.5 px-4 ml-2">See all updates &#40;Latest&#8758; Mar 9&#41;</p></a>
     </div>
     <div class="gameDesc text-greyFontColor mt-8">
-        <span class="text-white text-Base">FEEDBACK, IDEAS OR ISSUES? LET US KNOW THROUGH OUR DISCORD!</span>
-        <hr>
-        <img src="https://cdn.akamai.steamstatic.com/steam/apps/1683340/extras/discord-banner-alt8.png?t=1708002651" class="w-full mt-2">
-    </div>
-    <div class="gameDesc text-greyFontColor mt-8">
         <span class="text-white text-xl">About this game</span>
         <hr>
-        <p class="text-base mt-4 mb-6">Kayak VR: Mirage is a jaw-dropping and exhilarating journey through beautiful and unique locations, 
-            tailor-made for Virtual Reality. Maneuver our fully physically accurate kayak around checkpoints and crown yourself the fastest,
-             or take it easy and use the free roam mode for a leisurely trip and enjoy the scenery.
+        <p class="text-base mt-4 mb-6">The era of the VR weightless, wiggle-sword combat is over. Blade & Sorcery is a medieval
+             fantasy sandbox like no other, focusing on melee, ranged and magic combat that fully utilizes a unique and realistic physics 
+             driven interaction and combat system.
+        <p class="text-base mt-4 mb-6">Built exclusively for VR, collisions are dictated by fine hitboxes, objects have weight and 
+            follow the laws of physics, creatures have full body physics and presence, and blades can be used to penetrate soft materials 
+            or deflect magic.
         </p>
-        <span class="text-white text-base text-buttonColor">Features</span>
-        <ul class="ml-4 mb-12 leading-8">
-            <li>Beautiful and varied locations to explore or race through, featuring multiple times of day and weather conditions.</li>
-            <li>Cutting-edge graphics that push the limits of what VR is capable of.</li>
-            <li>Fully physics-based kayaking for an authentic experience that really makes you feel like you're on the water.</li>
-            <li>Free roam mode for a more serene experience through the levels.</li>
-            <li>Sit back and relax in our controller-free tour mode where the kayak moves for you.</li>
-            <li>A variety of sea and wildlife that brings every environment to life.</li>
-            <li>Time attack with a checkpoint course on all levels for racing fanatics who want a real workout.</li>
-            <li>Play asynchronously against other players on the global leaderboards or your friends.</li>
-            <li>Customize your kayak, paddle and headwear with a wide range of unlockable options.</li>
-            <li>Optionally transform your controllers into a paddle by attaching them to a stick or mount and take the immersion to the next level.</li>
-            <li>Comfort settings that make sure people without sea legs can enjoy it all the same.</li>
-            <li>A music selection that always fits with the environment and mode you're playing in.</li>
-            <li>Optimized to run well across a range of PC's, enabling a high-fidelity experience on high-end rigs while maintaining 
-                good performance on lower-end rigs.</li>
-            <li>Support for FidelityFX.</li>
-            <li>Support for DLSS (compatible with NVIDIA RTX Cards only).</li>
-        </ul>
-        <img src="https://cdn.akamai.steamstatic.com/steam/apps/1683340/extras/roadmap-banner.png?t=1708002651" class="w-full mt-2">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/629730/extras/decals_steam.gif?t=1701774481">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/629730/extras/fire_stab_steam.gif?t=1701774481" class="mt-2">
+        <p class="text-base mt-4 mb-6">In Blade & Sorcery, the combat is limited only by your own creativity. Choose your weapon, choose your stance, 
+            choose your fighting style; Be the powerful warrior, ranger or sorcerer you always dreamed of becoming!
+        </p>
+        <span class="text-white text-xl">Mature Content Description</span>
+        <hr>
+        <p class="text-base mt-4 mb-6">The developers describe the content like this&#8758;</p>
+        <p class="text-base mt-4 mb-6"><i>Includes intense violence and blood</i></p>
     </div>
     <div class="max-w-4xl rounded">
         <div class="text-base font-light uppercase">
@@ -748,7 +742,7 @@
           >
             <div class="w-[50px] md:w-auto grid md:justify-end lg:mr-2">
               <img
-                src="assets/footer/logo_valve_footer.png"
+                src="../assets/footer/logo_valve_footer.png"
                 class="w-full md:w-[100px]"
                 alt=""
               />
@@ -762,7 +756,7 @@
             </div>
             <div class="grid md:ml lg:ml-4 w-[50px] md:w-[200px]">
               <img
-                src="assets/footer/logo_steam_footer.png"
+                src="../assets/footer/logo_steam_footer.png"
                 class="w-full md:w-[100px]"
                 alt=""
               />

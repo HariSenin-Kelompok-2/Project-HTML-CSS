@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/productDetailStyles.css">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="../assets/productDetailStyles.css">
+    <link rel="stylesheet" href="../assets/style.css">
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="assets/style.css"
+      rel="stylesheet"
     />
     <script
       src="https://kit.fontawesome.com/de991fd127.js"
       crossorigin="anonymous">
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="script.js"></script>
+    <script src="../assets/js/script.js"></script>
     <script>
         tailwind.config = {
           theme: {
@@ -36,7 +36,7 @@
           }
         }
       </script>
-    <title>STAR WARS Jedi: Fallen Order™ on Steam</title>
+    <title>Oh Deer on Steam</title>
 </head>
 <body>
      <!-- header -->
@@ -54,7 +54,7 @@
             class="flex justify-center items-center lg:justify-end col-span-9 lg:col-span-1"
           >
             <img
-              src="assets/login/steamlogo.png"
+              src="../assets/login/steamlogo.png"
               class="w-[9vh] sm:w-[10vh] md:w-[20vh]"
               alt=""
             />
@@ -63,7 +63,7 @@
           <div
             class="lg:block md-[18px] text-[0.8rem] mt-[0.5vh] md:text-[2vw] lg:text-[1.2vw] lg:col-span-2 hidden sm:hidden md:hidden"
           >
-            <a href="index.html" class="mr-2 hover:text-[#38a4d2]">STORE</a>
+            <a href="../homepage.html" class="mr-2 hover:text-[#38a4d2]">STORE</a>
             <a href="" class="mr-2 hover:text-[#38a4d2]">COMMUNITY</a>
             <a href="" class="mr-2 hover:text-[#38a4d2]">ABOUT</a>
             <a href="" class="mr-2 hover:text-[#38a4d2]">SUPPORT</a>
@@ -107,7 +107,7 @@
         <div class="h-full text-[0.6rem] lg:text-[18px]">
           <div class="w-[13vw] md:w-auto grid md:justify-end lg:mr-2">
             <img
-              src="assets/footer/logo_valve_footer.png"
+              src="../assets/footer/logo_valve_footer.png"
               class="w-full md:w-[100px]"
               alt=""
             />
@@ -129,11 +129,18 @@
       <!-- Footer end -->
     </div>
 <!-- Hamburger Menu end -->
-    <div id="container" class="bg-steamBg text-headerFontColor p-60 pt-0">
+    <div id="container" class="bg-steamBg text-headerFontColor p-60 pt-2">
+        <!-- Cart -->
+        <div class="flex justify-end text-xs mb-1">
+            <a href="cart.html" class="bg-[#5c7e10] px-6 py-1 text-center hover:bg-[#7ea64b] text-white">
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i> <span>Cart (1)</span>
+            </a>
+        </div>
+        <!-- End Cart -->
         <div class="navBar">
             <div class="grid grid-cols-3 p-1 md:p-4">
               <div class="col-span-2">
-                <a href="homepage.html" class="mr-2 hover:text-[#38a4d2]">Your Store</a>
+                <a href="../homepage.html" class="mr-2 hover:text-[#38a4d2]">Your Store</a>
                 <a href="" class="mr-2 hover:text-[#38a4d2]">New & Noteworthy</a>
                 <a href="" class="mr-2 hover:text-[#38a4d2]">Categories</a>
                 <a href="" class="mr-2 hover:text-[#38a4d2]">Point Shop</a>
@@ -155,29 +162,26 @@
         <div id="directory" class="text-fontColor text-sm mt-16">
             <p><a href="">All Games</a> &#62;
                 <a href="">Action Games</a> &#62;
-                <a href="">Star Wars Franchise</a> &#62;
-                <a href="">STAR WARS Jedi: Fallen Order™</a>
+                <a href="">Oh Deer</a>
             </p>
         </div>
     <div id="gameName" class="flex justify-between">
-        <h1 class="text-3xl mb-4">STAR WARS Jedi: Fallen Order™</h1>
+        <h1 class="text-3xl mb-4">Oh Deer</h1>
             <a href="">
                 <button class="bg-buttonColorBg text-buttonColor pt-2 pr-4 pb-2 pl-4 rounded-sm">Community Hub</button>
             </a>
 </div>
     <div id="headerBg" class="flex flex-row-reverse pb-4 max-w-full max-h-full">
         <div id="sideDesc" class="ml-4 min-w-60 w-screen max-w-full max-h-full">
-            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1172380/header.jpg?t=1701206847" alt="header" class="min-w-full">
-            <p class="mobileH1 text-3xl mt-4">STAR WARS Jedi: Fallen Order™</p>
+            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2708450/header.jpg?t=1710877806" alt="header" class="min-w-full">
+            <p class="mobileH1 text-3xl mt-4">Oh Deer</p>
                 <div class="quickDesc">
-                    <p class="text-sm my-2"> A galaxy-spanning adventure awaits in Star Wars Jedi: Fallen Order, a 3rd person action-adventure
-                         title from Respawn. An abandoned Padawan must complete his training, develop new powerful Force abilities, and master
-                          the art of the lightsaber - all while staying one step ahead of the Empire.
+                    <p class="text-sm my-2"> One Hunter, and up to four more friends disguised as deer. In this thrilling game of hide-and-seek 
+                        where every move could be the last. Will you blend in with the herd or stand out? Oh Deer...
                     </p>
                 </div>
             <div class="reviews flex text-xs">
                 <div class="reviewsHeader flex-col text-fontColor">
-                    <p><a href="">Recent Reviews:</a></p>
                     <p><a href="">All Reviews:</a></p>
                     <p class="leading-8"><a href="">Release Date:</a></p>
                     <p><a href="">Developer:</a></p>
@@ -185,31 +189,31 @@
                 </div>
                 <div class="reviewsScore ml-4 text-buttonColor flex flex-col">
                     <span>Very Positive</span>
-                    <span>Very Positive</span>
-                    <span class="text-fontColor leading-8">15 Nov, 2019</span>
-                    <span>Respawn Entertainment</span>
-                    <span>Electronic Arts</span>
+                    <span class="text-fontColor leading-8">15 Mar, 2024</span>
+                    <span>Cozy Cabin Studios</span>
+                    <span>Cozy Cabin Studios</span>
                 </div>
             </div>
             <div class="genreTag mt-2 mb-2 text-xs w-full">
                 <p class="text-fontColor">Popular user-defined tags for this product:</p>
-                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Action-Adventure</a></span>
-                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Souls-like</a></span>
-                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Third Person</a></span>
-                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Sci fi</a></span>
+                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Early Access</a></span>
+                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Multiplayer</a></span>
+                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Archery</a></span>
+                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Stealth</a></span>
+                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">PvP</a></span>
                     <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">&#43;</a></span>
             </div>
         </div>
         <div id="mainVideo" class="max-w-full max-h-full">
             <video controls>
-                <source src="https://cdn.cloudflare.steamstatic.com/steam/apps/256765709/movie_max.webm?t=1572357561" type="video/webm">
+                <source src="https://cdn.cloudflare.steamstatic.com/steam/apps/257006056/movie_max_vp9.webm?t=1709870373" type="video/webm">
             </video>
             <div class="thumbnails flex justify-between gap-1 mt-1 overflow-scroll">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1172380/ss_695a5724e306269d81ca0118d86308a170c9e913.116x65.jpg?t=1701206847">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1172380/ss_cfad9481db1a3b68fb5fcb2298cfc74bcb6a469e.116x65.jpg?t=1701206847">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1172380/ss_763dcc7434f072d6fdbb9037b4d37f4474e29d9b.116x65.jpg?t=1701206847">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1172380/ss_045d78dba983384cf8282e617e7ba04e40a9e2e9.116x65.jpg?t=1701206847">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1172380/ss_effd33d4b798698bec179a5721dfba527e8432f0.116x65.jpg?t=1701206847">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2708450/ss_0a9cf507d9f2de0b2eccd9e8f53fd6900b7d80d2.116x65.jpg?t=1710877806">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2708450/ss_1e3c2dfd5107e7a01bcb47a299897a858de5be8b.116x65.jpg?t=1710877806">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2708450/ss_ff9d03db1c6fb67e0612720d818b1e651a422dd4.116x65.jpg?t=1710877806">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2708450/ss_dbe1ebc1af9f40927ab14c8f48f2468463b07eda.116x65.jpg?t=1710877806">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2708450/ss_9f8699b19e8c703dee924875a824c5d109bf75df.116x65.jpg?t=1710877806">
             </div>
     </div>
     </div>
@@ -539,29 +543,16 @@
             </div>
             <div class="gameAchievement p-4 text-greyFontColor text-xs">
                 <p>Include 1 Steam Achievements</p>
-                <img src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/f75dd04fa12445a8ec43be65fa16ff1b8d2bf82e.jpg"
+                <img src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/2708450/5dbad561612c0f8263f7320b8fd02cb31ba44cc6.jpg"
                     class="mt-4 w-16 h-16">
             </div>
-            <div class="pointShop max-w-full max-h-screen my-2 p-4">
-                <div class="pointShopHeader flex mb-4 text-xs w-full">
-                    <p>Points Shop Items Available</p>
-                </div>
-                <div class="pointShopImg flex gap-1 w-16 h-16">
-                    <img src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/730/c30260bb120bf1379f075802653c8eb86da7a7e9.png" class="bg-black">
-                    <img src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/730/c2a822b6422d7a2c9e72ec74bf54139db8723ef0.png" class="bg-black">
-                    <img src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/730/08763b38c214a554b5e83c5a39a048495b6ecee6.png" class="bg-black">
-                    <a href="" class="flex justify-center items-center bg-blueItemBg text-buttonColor rounded-sm text-sm text-center min-w-14 min-h-16">
-                    View all 29
-                     </a>
-            </div>
-            </div>
-            <div class="prodGenre p-5 w-full text-xs">
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Title:</span> STAR WARS Jedi: Fallen Order™</p>
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Genre:</span><a href=""> Action, Adventure</a></p>
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Developer:</span> <a href="">Respawn Entertainment</a></p>
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Publisher:</span> <a href="">Electronic Arts</a></p>
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Franchise:</span> <a href="">Star Wars</a></p>
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Release Date:</span> 15 Nov, 2019</p>
+            <div class="prodGenre p-5 w-full text-xs mt-2">
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Title:</span>Oh Deer</p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Genre:</span><a href="">Action, Casual, Indie, Early Access</a></p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Developer:</span> <a href=""> Cozy Cabin Studios</a></p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Publisher:</span> <a href=""> Cozy Cabin Studios</a></p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Release Date:</span> 15 Mar, 2024</p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Early Access Release Date:</span> 15 Mar, 2024</p>
                     <div class="genreButtonHeader">
                         <div class="genreButton bg-blueItemBg text-buttonColor p-1 mb-1 rounded-sm">
                             <span><a href="" class="text-buttonColor">Visit the website</a></span>
@@ -612,55 +603,10 @@
     </div>
 <div id="cardWrapper">
     <div class="card p-4 mt-6 mb-2 rounded relative">
-            <h2 class="text-2xl font-semibold">Buy STAR WARS Jedi: Fallen Order</h2>
-            <p class="text-sm">SPECIAL PROMOTION! Offer ends 29 March
-            </p>
+            <h2 class="text-2xl font-semibold">Buy Oh Deer</h2>
         <div class="gamePurchaseContainer text-base text-right absolute right-1">
             <div class="gamePurchaseButton py-2.5 pl-4 pr-0 bg-black rounded">
-                <span>Rp 47 900 <span class="gamePurchase m-1 bg-buyBg py-2 px-4 rounded"><a href="">Add to Cart</a></span></span>
-            </div>
-        </div>
-    </div>
-    <div class="card p-4 mt-6 rounded relative">
-        <h3 class="text-2xl font-semibold">Buy STAR WARS Jedi: Fallen Order Deluxe Edition</h3>
-        <p class="text-sm">SPECIAL PROMOTION! Offer ends 29 March
-        </p>
-        <div class="gamePurchaseContainer text-base text-right absolute right-1">
-            <div class="gamePurchaseButton py-2.5 pl-4 pr-0 bg-black rounded">
-                <span>Rp 56 900<span class="gamePurchase m-1 bg-buyBg py-2 px-4 rounded"><a href="">Add To Cart</a></span></span>
-            </div>
-        </div>
-    </div>
-    <div class="card p-4 mt-8 rounded relative">
-        <h4 class="text-2xl font-semibold">Buy STAR WARS™ Jedi Bundle <span class="bundle text-buttonColor font-extralight">Bundle <span class="tooltip text-greyFontColor text-xs">&#40;?&#41;</span></span></h4>    
-            <p class="text-sm">Buy this bundle to save 10% off all 2 items!</p>
-            <div class="bundleImg flex overflow-clip bg-black">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1172380/capsule_sm_120.jpg?t=1701206847" alt="">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1774580/capsule_sm_120.jpg?t=1701206599" alt="">
-            </div>
-            <div class="bundleInfo text-sm rounded-sm py-2 px-4 absolute m-1 right-[20vw]">
-                <span><a href="">Bundle info</a></span>
-            </div>
-        <div class="gamePurchaseContainer text-base text-right absolute right-1">
-            <div class="gamePurchaseButton m-1 py-2 px-2 bg-black rounded">
-                <span>Rp 350 505<span class="gamePurchase m-1 bg-buyBg py-2 px-4 rounded"><a href="">Add To Cart</span></a></span>
-            </div>
-        </div>
-    </div>
-    <div class="card p-4 mt-8 rounded relative">
-        <h4 class="text-2xl font-semibold">Buy EA STAR WARS™ TRIPLE BUNDLE <span class="bundle text-buttonColor font-extralight">Bundle <span class="tooltip text-greyFontColor text-xs">&#40;?&#41;</span></span></h4>    
-            <p class="text-sm">Buy this bundle to save 0% off all 3 items!</p>
-            <div class="bundleImg flex overflow-clip bg-black">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1222730/capsule_sm_120.jpg?t=1662047498" alt="">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1172380/capsule_sm_120.jpg?t=1701206847" alt="">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1237950/capsule_sm_120.jpg?t=1701356407" alt="">
-            </div>
-            <div class="bundleInfo text-sm rounded-sm py-2 px-4 absolute m-1 right-[20vw]">
-                <span><a href="">Bundle info</a></span>
-            </div>
-        <div class="gamePurchaseContainer text-base text-right absolute right-1">
-            <div class="gamePurchaseButton m-1 py-2 px-2 bg-black rounded">
-                <span>Rp 138 330<span class="gamePurchase m-1 bg-buyBg py-2 px-4 rounded"><a href="">Add To Cart</span></a></span>
+                <span>Rp 90 999 <span class="gamePurchase m-1 bg-buyBg py-2 px-4 rounded"><a href="">Add to Cart</a></span></span>
             </div>
         </div>
     </div>
@@ -669,10 +615,10 @@
         </div>
     <div id="wrapper">
         <div class="w-full h-full">
-            <img src="https://clan.cloudflare.steamstatic.com/images/36090644/2064e339a8f4534b2678b897e4bfb57c86abd6c3_400x225.png" alt="">
+            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2708450/header.jpg" alt="">
         </div>
         <div class="w-full h-full">
-            <img src="https://clan.cloudflare.steamstatic.com/images/36090644/2064e339a8f4534b2678b897e4bfb57c86abd6c3_400x225.png" alt="">
+            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2708450/header.jpg" alt="">
         </div>
     </div>
         <div class="moreButton flex mt-4 mb-8">
@@ -699,44 +645,36 @@
             <a href=""><p class="text-xs rounded-sm py-0.5 px-4 ml-2">See all updates &#40;Latest&#8758; Mar 9&#41;</p></a>
         </div>
     <div class="gameDesc text-greyFontColor">
+        <div class="gameDesc text-greyFontColor">
+            <span class="text-white text-xl uppercase">JOIN OUR DISCORD</span>
+            <hr>
+            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2708450/extras/Steam_Banner_Oh_Deer.png?t=1710877806" 
+                alt="gamePromotion"
+                class="w-full my-4">
+        </div>
         <span class="text-white text-xl">About this game</span>
         <hr>
-        <p class="text-base mt-4 mb-6">A galaxy-spanning adventure awaits in Star Wars Jedi: Fallen Order, a new third-person action-adventure 
-            title from Respawn Entertainment. This narratively driven, single-player game puts you in the role of a Jedi Padawan who narrowly 
-            escaped the purge of Order 66 following the events of Episode 3: Revenge of the Sith. On a quest to rebuild the Jedi Order, you must 
-            pick up the pieces of your shattered past to complete your training, develop new powerful Force abilities and master the art of the 
-            iconic lightsaber - all while staying one step ahead of the Empire and its deadly Inquisitors.
-        </p>
-        <p class="text-base mt-4 mb-6">While mastering your abilities, players will engage in cinematically charged lightsaber and Force combat
-             designed to deliver the kind of intense Star Wars lightsaber battles as seen in the films. Players will need to approach enemies 
-             strategically, sizing up strengths and weaknesses while cleverly utilizing your Jedi training to overcome your opponents and solve 
-             the mysteries that lay in your path.
-        </p>
-        <p class="text-base mt-4 mb-6">Star Wars fans will recognize iconic locations, weapons, gear and enemies while also meeting a roster 
-            of fresh characters, locations, creatures, droids and adversaries new to Star Wars. As part of this authentic Star Wars story, 
-            fans will delve into a galaxy recently seized by the Empire. As a Jedi hero-turned-fugitive, players will need to fight for survival 
-            while exploring the mysteries of a long-extinct civilization all in an effort to rebuild the remnants of the Jedi Order as the Empire 
-            seeks to erase the Jedi completely.
-       </p>
         <p class="text-base mt-4 mb-6">
-            In addition to the classic objective-focused gameplay that Counter-Strike pioneered in 1999, Counter-Strike 2 features:
+            Oh Deer is a multiplayer hide-and-seek game where one player plays as a hunter and up to four others play as deer.
+            <br>
+            Hunter Role
+            <br>
+            The hunter's role is to use sound, gadgets, and pure skill to locate and eliminate the other players before nightfall. 
+            However, knowing if the deer in your sights is a player or not is the true challenge.
+            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2708450/extras/GIF_Hunter.gif?t=1710877806" alt="gameDesc" class="w-full">
+            <br>
+            Deer Role
+            <br>
+            The Deer's role is to hide from the hunter by blending in with a handful of AI deer scattered around the map. 
+            Eating food is a priority to keep hunger at bay. But improper timing when eating could mean the difference between life and death.
+            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2708450/extras/GIF_Deer.gif?t=1710877806" alt="gameDesc" class="w-full">
+            <br>
+            The Map
+            <br>
+            Forests are the perfect place to hide. With lots of trees, bushes, and cute flowers, deer can live happily for years without any 
+            worries. That is, until hunting season begins... Tall trees, thick bushes, and plenty of shade sets up a perfect ambush.
+            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2708450/extras/GIF_Map.gif?t=1710877806" alt="gameDesc" class="w-full">
         </p>
-        <ul class="ml-4 mb-12 leading-8">
-            <li>Cinematic, Immersive Combat – Jedi: Fallen Order delivers the fantasy of becoming a Jedi through its innovative lightsaber 
-                combat system–striking, parrying, dodging–partnered with a suite of powerful Force abilities you’ll need to leverage to overcome 
-                obstacles that stand in your way. This combat system is intuitive but takes training and practice to fully master its nuances as
-                 you gain new powers and abilities along your adventure.
-            </li>
-            <li>A New Jedi Story Begins - As a former Padawan on the run from the Empire, you must complete your training before Imperial
-                 Inquisitors discover your plan to revive the Jedi Order. Aided by a former Jedi Knight, a cantankerous pilot and a fearless
-                  droid, you must escape the evil machinations of the Empire in a story-driven adventure. Explore and overcome a wide range 
-                  of challenges focused on combat, exploration and puzzle-solving.
-            </li>
-            <li>The Galaxy Awaits - Ancient forests, windswept rock faces and haunted jungles are all unique biomes you’ll explore in Jedi: 
-                Fallen Order, with the freedom to decide when and where you go next. As you unlock new powers and abilities, opportunities open
-                 up to re-traverse maps in new ways; leveraging the Force to augment the way you explore. Move quickly, however, as the Empire 
-                 is actively hunting your every step in their effort to exterminate all remnants of the Jedi Order.</li>
-        </ul>
     </div>
     <div class="max-w-4xl rounded">
         <div class="text-base font-light uppercase">
@@ -801,7 +739,7 @@
           >
             <div class="w-[50px] md:w-auto grid md:justify-end lg:mr-2">
               <img
-                src="assets/footer/logo_valve_footer.png"
+                src="../assets/footer/logo_valve_footer.png"
                 class="w-full md:w-[100px]"
                 alt=""
               />
@@ -815,7 +753,7 @@
             </div>
             <div class="grid md:ml lg:ml-4 w-[50px] md:w-[200px]">
               <img
-                src="assets/footer/logo_steam_footer.png"
+                src="../assets/footer/logo_steam_footer.png"
                 class="w-full md:w-[100px]"
                 alt=""
               />

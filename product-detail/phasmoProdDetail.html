@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/productDetailStyles.css">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="../assets/productDetailStyles.css">
+    <link rel="stylesheet" href="../assets/style.css">
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="assets/style.css"
+      rel="stylesheet"
     />
     <script
       src="https://kit.fontawesome.com/de991fd127.js"
       crossorigin="anonymous">
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="script.js"></script>
+    <script src="../assets/js/script.js"></script>
     <script>
         tailwind.config = {
           theme: {
@@ -36,7 +36,7 @@
           }
         }
       </script>
-    <title>Pistol Whip on Steam</title>
+    <title>Phasmophobia on Steam</title>
 </head>
 <body>
      <!-- header -->
@@ -54,7 +54,7 @@
             class="flex justify-center items-center lg:justify-end col-span-9 lg:col-span-1"
           >
             <img
-              src="assets/login/steamlogo.png"
+              src="../assets/login/steamlogo.png"
               class="w-[9vh] sm:w-[10vh] md:w-[20vh]"
               alt=""
             />
@@ -63,7 +63,7 @@
           <div
             class="lg:block md-[18px] text-[0.8rem] mt-[0.5vh] md:text-[2vw] lg:text-[1.2vw] lg:col-span-2 hidden sm:hidden md:hidden"
           >
-            <a href="index.html" class="mr-2 hover:text-[#38a4d2]">STORE</a>
+            <a href="../homepage.html" class="mr-2 hover:text-[#38a4d2]">STORE</a>
             <a href="" class="mr-2 hover:text-[#38a4d2]">COMMUNITY</a>
             <a href="" class="mr-2 hover:text-[#38a4d2]">ABOUT</a>
             <a href="" class="mr-2 hover:text-[#38a4d2]">SUPPORT</a>
@@ -107,7 +107,7 @@
         <div class="h-full text-[0.6rem] lg:text-[18px]">
           <div class="w-[13vw] md:w-auto grid md:justify-end lg:mr-2">
             <img
-              src="assets/footer/logo_valve_footer.png"
+              src="../assets/footer/logo_valve_footer.png"
               class="w-full md:w-[100px]"
               alt=""
             />
@@ -129,11 +129,18 @@
       <!-- Footer end -->
     </div>
 <!-- Hamburger Menu end -->
-    <div id="container" class="bg-steamBg text-headerFontColor p-60 pt-0">
+    <div id="container" class="bg-steamBg text-headerFontColor p-60 pt-2">
+        <!-- Cart -->
+        <div class="flex justify-end text-xs mb-1">
+            <a href="cart.html" class="bg-[#5c7e10] px-6 py-1 text-center hover:bg-[#7ea64b] text-white">
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i> <span>Cart (1)</span>
+            </a>
+        </div>
+        <!-- End Cart -->
         <div class="navBar">
             <div class="grid grid-cols-3 p-1 md:p-4">
               <div class="col-span-2">
-                <a href="homepage.html" class="mr-2 hover:text-[#38a4d2]">Your Store</a>
+                <a href="../homepage.html" class="mr-2 hover:text-[#38a4d2]">Your Store</a>
                 <a href="" class="mr-2 hover:text-[#38a4d2]">New & Noteworthy</a>
                 <a href="" class="mr-2 hover:text-[#38a4d2]">Categories</a>
                 <a href="" class="mr-2 hover:text-[#38a4d2]">Point Shop</a>
@@ -154,24 +161,23 @@
           </div>
         <div id="directory" class="text-fontColor text-sm mt-16">
             <p><a href="">All Games</a> &#62;
-                <a href="">Action Games</a> &#62;
-                <a href="">Pistol Whip</a>
+                <a href="">Indie Games</a> &#62;
+                <a href="">Phasmophobia</a>
             </p>
         </div>
     <div id="gameName" class="flex justify-between">
-        <h1 class="text-3xl mb-4">Pistol Whip</h1>
+        <h1 class="text-3xl mb-4">Phasmophobia</h1>
             <a href="">
                 <button class="bg-buttonColorBg text-buttonColor pt-2 pr-4 pb-2 pl-4 rounded-sm">Community Hub</button>
             </a>
 </div>
     <div id="headerBg" class="flex flex-row-reverse pb-4 max-w-full max-h-full">
         <div id="sideDesc" class="ml-4 min-w-60 w-screen max-w-full max-h-full">
-            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1079800/header.jpg?t=1709311461" alt="header" class="min-w-full">
-            <p class="mobileH1 text-3xl mt-4">Pistol Whip</p>
+            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/739630/header.jpg?t=1702309974" alt="header" class="min-w-full">
+            <p class="mobileH1 text-3xl mt-4">Phasmophobia</p>
                 <div class="quickDesc">
-                    <p class="text-sm my-2">Enter: the ultimate action hero. Pistol Whip is a physical action-rhythm game where film-inspired 
-                        gunplay and blood-pumping beats collide. Blast, duck and dodge your way through fever dream Scenes, build unique rhythms 
-                        in a ballet of bullets and claim glory on the leaderboards. Includes mod support!
+                    <p class="text-sm my-2"> Phasmophobia is a 4 player online co-op psychological horror. Paranormal activity is on the rise and 
+                        it’s up to you and your team to use all the ghost-hunting equipment at your disposal in order to gather as much evidence as you can
                     </p>
                 </div>
             <div class="reviews flex text-xs">
@@ -184,33 +190,32 @@
                 </div>
                 <div class="reviewsScore ml-4 text-buttonColor flex flex-col">
                     <span>Very Positive</span>
-                    <span>Very Positive</span>
-                    <span class="text-fontColor leading-8">7 Nov, 2019</span>
-                    <span>Cloudhead Games Ltd.</span>
-                    <span>Cloudhead Games Ltd.</span>
+                    <span>Overwhelmingly Positive</span>
+                    <span class="text-fontColor leading-8">19 Sep, 2020</span>
+                    <span>Kinetic Games</span>
+                    <span>Kinetic Games</span>
                 </div>
             </div>
             <div class="genreTag mt-2 mb-2 text-xs w-full">
                 <p class="text-fontColor">Popular user-defined tags for this product:</p>
+                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Horror</a></span>
+                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Online Co-op</a></span>
+                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Multiplayer</a></span>
+                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Co-op</a></span>
                     <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">VR</a></span>
-                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Action</a></span>
-                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Rhythm</a></span>
-                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Shooter</a></span>
-                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Arcade</a></span>
-                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Indie</a></span>
                     <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">&#43;</a></span>
             </div>
         </div>
         <div id="mainVideo" class="max-w-full max-h-full">
             <video controls>
-                <source src="https://cdn.cloudflare.steamstatic.com/steam/apps/256921527/movie_max_vp9.webm?t=1702324573" type="video/webm">
+                <source src="https://cdn.cloudflare.steamstatic.com/steam/apps/256776660/movie_max.webm?t=1583525286" type="video/webm">
             </video>
             <div class="thumbnails flex justify-between gap-1 mt-1 overflow-scroll">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1079800/ss_a282d06f5be9bfaf5a80f7a73047e5ed3563f2ab.116x65.jpg?t=1709311461">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1079800/ss_8003a78c23c0bc180dd253fc9afda16c7e11ab5f.116x65.jpg?t=1709311461">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1079800/ss_fc8b672ce463bf86c3ca2bd1810119d1ce86937a.116x65.jpg?t=1709311461">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1079800/ss_6dfbda14cf63b67e2944ebd34f30281f41ef49ae.116x65.jpg?t=1709311461">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1079800/ss_d4b4e1f1aa1e514d1bd401ec08fd38f8c2db23ed.116x65.jpg?t=1709311461">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/739630/ss_c88170bed9bf8690963323d20e3f9e836cb9aed9.116x65.jpg?t=1702309974">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/739630/ss_f0377c02897de8831a5f032f13a6dc0f994516d5.116x65.jpg?t=1702309974">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/739630/ss_ce1062b9312afbc12000f980087ede8fa718445d.116x65.jpg?t=1702309974">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/739630/ss_8032ff1ebe2aad6871c45b30458d7a6c868f2212.116x65.jpg?t=1702309974">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/739630/ss_b446d0ca191cf5a183ac3cc9538a59aa7575c14c.116x65.jpg?t=1702309974">
             </div>
     </div>
     </div>
@@ -540,7 +545,7 @@
             </div>
             <div class="gameAchievement p-4 text-greyFontColor text-xs">
                 <p>Include 1 Steam Achievements</p>
-                <img src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/f75dd04fa12445a8ec43be65fa16ff1b8d2bf82e.jpg"
+                <img src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/739630/ee94ee6a058807c8bb712750f6a8b5ea053f5c01.jpg"
                     class="mt-4 w-16 h-16">
             </div>
             <div class="pointShop max-w-full max-h-screen my-2 p-4">
@@ -557,11 +562,12 @@
             </div>
             </div>
             <div class="prodGenre p-5 w-full text-xs">
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Title:</span>Pistol Whip</p>
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Genre:</span><a href="">Action, Indie</a></p>
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Developer:</span> <a href="">Cloudhead Games Ltd.</a></p>
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Publisher:</span> <a href="">Cloudhead Games Ltd.</a></p>
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Release Date:</span> 7 Nov, 2019</p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Title:</span> Phasmophobia</p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Genre:</span><a href=""> Action, Indie, Early Access</a></p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Developer:</span> <a href=""> Kinetic Games</a></p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Publisher:</span> <a href=""> Kinetic Games</a></p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Release Date:</span> <a href=""> 19 Sep, 2020</a></p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Early Access Release Date:</span> 19 Sep, 2020</p>
                     <div class="genreButtonHeader">
                         <div class="genreButton bg-blueItemBg text-buttonColor p-1 mb-1 rounded-sm">
                             <span><a href="" class="text-buttonColor">Visit the website</a></span>
@@ -612,48 +618,22 @@
     </div>
 <div id="cardWrapper">
     <div class="card p-4 mt-6 mb-2 rounded relative">
-            <h2 class="text-2xl font-semibold">Buy Pistol Whip</h2>
+            <h2 class="text-2xl font-semibold">Buy Phasmophobia</h2>
         <div class="gamePurchaseContainer text-base text-right absolute right-1">
             <div class="gamePurchaseButton py-2.5 pl-4 pr-0 bg-black rounded">
-                <span>Rp 245 999 <span class="gamePurchase m-1 bg-buyBg py-2 px-4 rounded"><a href="">Add to Cart</a></span></span>
+                <span>Rp 89 999 <span class="gamePurchase m-1 bg-buyBg py-2 px-4 rounded"><a href="">Add to Cart</a></span></span>
             </div>
         </div>
-    </div>
-    <div class="card p-4 mt-6 rounded relative">
-        <h4 class="text-2xl font-semibold">Buy Pistol Whip + Soundtrack <span class="bundle text-buttonColor font-extralight">Bundle <span class="tooltip text-greyFontColor text-xs">&#40;?&#41;</span></span></h4>    
-            <p class="text-sm">Buy this bundle to save 10% off all 3 items!</p>
-            <div class="bundleImg flex overflow-clip bg-black">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1079800/capsule_sm_120.jpg?t=1709311461" alt="">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1190950/capsule_sm_120.jpg?t=1695861145" alt="">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1567510/capsule_sm_120.jpg?t=1695861190" alt="">
-            </div>
-            <div class="bundleInfo text-sm rounded-sm py-2 px-4 absolute m-1 right-[20vw]">
-                <span><a href="">Bundle info</a></span>
-            </div>
-        <div class="gamePurchaseContainer text-base text-right absolute right-1">
-            <div class="gamePurchaseButton m-1 py-2 px-2 bg-black rounded">
-                <span>Rp 399 597<span class="gamePurchase m-1 bg-buyBg py-2 px-4 rounded"><a href="">Add To Cart</span></a></span>
-            </div>
-        </div>
-    </div>
-    <div class="contentHeader mt-24 text-sm font-medium uppercase">
-        <span>Content for this game <span class="browseButton py-0.5 px-2 mb-0.5 text-xs float-right capitalize"><a href="">Browse all &#40;1&#41;</a></span></span> 
-    </div>
-    <div class="content text-xs">
-        <a href="" class="ml-4">Pistol Whip Official Soundtrack Vol. 1<span class="float-right mr-4">Rp 106 999</span></a>
-    </div>
-    <div class="content text-xs mt-0.5">
-        <a href="" class="ml-4">Pistol Whip Official Soundtrack Vol. 2<span class="float-right mr-4">Rp 90 999</span></a>
     </div>
         <div class="eventHeader mt-24 text-sm font-medium uppercase">
             <span>Recent Events &#38; Announcements <span class="browseButton py-0.5 px-2 mb-0.5 text-xs float-right capitalize">View All</span></span>
         </div>
     <div id="wrapper">
         <div class="w-full h-full">
-            <img src="https://clan.cloudflare.steamstatic.com/images/35882631/a34680fc91783190ad256134cf55989e65db3c21_400x225.png" alt="">
+            <img src="https://clan.cloudflare.steamstatic.com/images/37002678/b58a00ce478f9d93fa4eaeb316dbc85d6eadedae_400x225.png" alt="">
         </div>
         <div class="w-full h-full">
-            <img src="https://clan.cloudflare.steamstatic.com/images/35882631/bdf29b657e47e6910e0033bc58d7967ec9e7c5c3_400x225.png" alt="">
+            <img src="https://clan.cloudflare.steamstatic.com/images/37002678/6435a5611ba9628f3d33e5b05f53658172de9354_400x225.png" alt="">
         </div>
     </div>
         <div class="moreButton flex mt-4 mb-8">
@@ -679,43 +659,62 @@
             </svg>
             <a href=""><p class="text-xs rounded-sm py-0.5 px-4 ml-2">See all updates &#40;Latest&#8758; Mar 9&#41;</p></a>
         </div>
+        <div class="gameDesc text-greyFontColor">
+            <span class="text-white text-xl uppercase">JOIN OUR DISCORD</span>
+            <hr>
+            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/739630/extras/Discord_banner.png?t=1702309974" 
+                alt="gamePromotion"
+                class="w-full my-4">
+        </div>
+        <div class="gameDesc text-greyFontColor">
+            <span class="text-white text-xl uppercase">2023/2024 ROADMAP</span>
+            <hr>
+            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/739630/extras/Roadmap_v2_616.png?t=1702309974" 
+                alt="gamePromotion"
+                class="w-full my-4">
+        </div>
     <div class="gameDesc text-greyFontColor">
         <span class="text-white text-xl">About this game</span>
         <hr>
-        <p class="text-base mt-4 mb-6">Winner of VR GOTY at the 2020 DICE Awards, this Physical FPS is fueled by dynamic tracks, dreamscape
-             visuals, and easy to learn, tough to master gunplay. Inspired by iconic action cinema, the only thing that goes harder than this 
-             title’s soundtrack is you. Conquer the leaderboards, flow to the music with your own rhythmic patterns, or go all out as a 
-             dual-wielding deadeye with nothing to lose.
+        <p class="text-base mt-4 mb-6">Phasmophobia is a 4-player, online co-op, psychological horror game. You and your team of paranormal 
+            investigators will enter haunted locations filled with paranormal activity and try to gather as much evidence as you can. 
+            Use your ghost-hunting equipment to find and record evidence to sell on to a ghost removal team.
         </p>
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1079800/extras/PW_storefront-divider_Game-features__650.png?t=1709311461">
-        <ul class="ml-4 mb-12 leading-8">
-            <li>An Action-Rhythm Rush. Take aim and fire on the beat as you barrel through Scene after Scene. Find your flow, rack up points, become 
-                unstoppable.</li>
-            <li>The Big Gun: That’s you. Take on special Scenes inspired by iconic movies, and become deadeye legend</li>
-            <li>Limitless Additional Content. Play Remixed Scenes created by the modding community directly in-game.</li>
-            <li>Absurdly Customizable. Dig into the Styles system to overhaul core mechanics to your exact preferences.
-                 Make Pistol Whip a part of your fitness routine, or tweak your loadout to fit your accessibility needs.</li>
-            <li>Endless Ways To Play. Tackle over 35 unique Scenes, bag daily Contracts challenges, and always stay tuned for the next big content update.</li>
-            <li>Cinematic Campaigns. Ride into the wild, wild west with Smoke & Thunder, or face down a technicolour Robopocalypse in 2089.</li>
-            <li>A Dancefloor Fever Dream. Fall into vivid fantasias, shimmering nightmares, and skylines that pulse with the beat—then blast your way back out.</li>
-            <li>Songs To Get Reckless To. From Devora’s furious desert rock to the driving basslines of Apashe, this soundtrack will have you feeling invincible.</li>
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/739630/extras/investigate.png?t=1702309974"
+                alt="gamePromotion"
+                class="w-full my-4">
+        <ul class="text-base mt-4 mb-6">
+            <li>Immersive Experience: Realistic graphics and sounds as well as a minimal user interface ensure a totally immersive
+                 experience that will keep you on your toes.</li>
+            <li>Unique Ghosts: Identify over 20 different ghost types, each with unique traits, personalities, and abilities to make 
+                each investigation feel different from the last.</li>
+            <li>Equipment: Use well-known ghost-hunting equipment such as EMF Readers, Spirit Boxes, Thermometers, and Night Vision Cameras 
+                to find clues and gather as much paranormal evidence as you can. Find Cursed Possessions that grant information or abilities 
+                in exchange for your sanity.</li>
+            <li>Full Voice Recognition: The Ghosts are listening! Use your actual voice to interact with the Ghosts through Ouija Boards and 
+                EVP Sessions using a Spirit Box.</li>
         </ul>
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1079800/extras/PW_storefront-divider_remixes-mods_c_650.png?t=1709311461">
-        <p class="text-base mt-4 mb-6 text-buttonColor">Play the growing library of explosive Scenes created by the Pistol Whip modding community 
-            directly in-game. Find them in the Remixes tab!
-        </p>
-       <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1079800/extras/PW_PistolMix_banner_650W.jpg?t=1709311461">
-       <p class="text-base mt-4 mb-6 text-buttonColor">Pistol Mix: Official Modding Tool</p>
-       <p class="text-base mt-4 mb-6">Pistol Mix allows modders of any skill level to create a custom Remix of a Pistol Whip Scene 
-           from start to finish.
-        </p>
-        <p class="text-base mt-4 mb-6">Download the tool and create a Remixed Scene by placing enemies, obstacles, props and more.</p>
-        <p class="text-base mt-4 mb-6">Share your work-in-progress on Discord to get playtesters involved, and upload your Remix to Mod 
-            io to share it with players!
-        </p>
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1079800/extras/PW_storefront-divider_game-support__650.png?t=1709311461">
-        <p class="text-base mt-4 mb-6">If you have encountered an issue with Pistol Whip, please let our team know as soon as you can by submitting 
-            a ticket on our Help Desk.
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/739630/extras/play_your_way.png?t=1702309974"
+                alt="gamePromotion"
+                class="w-full my-4">
+                <ul class="text-base mt-4 mb-6">
+                    <li>Locations: Choose from over 10 different haunted locations, each with unique twists, hiding spots, and layouts.</li>
+                    <li>Game Modes: With 5 default difficulties and hand crafted weekly challenges, there are plenty of ways to test your skills.</li>
+                    <li>Teamwork: Dive in head first, get your hands dirty searching for evidence while fighting for your life. If you're not
+                         feeling up to the task, play it safe and support your team from the truck by monitoring the investigation with CCTV and
+                          motion sensors.</li>
+                    <li>Custom Difficulty: Create your own games to tailor the difficulty to your or your group's needs, with proportional 
+                        rewards and come up with crazy game modes of your own!</li>
+                </ul>
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/739630/extras/multiplayer.png?t=1702309974"
+                alt="gamePromotion"
+                class="w-full my-4">
+                <ul class="text-base mt-4 mb-6">
+                    <li>Co-operate: Play alongside your friends with up to 4 players in this co-op horror where teamwork is key to your success.</li>
+                    <li>Play together: Phasmophobia supports all players together, play with your friends with any combination of input types.</li>
+                </ul>
+   </p>
+
     </div>
     <div class="max-w-4xl rounded">
         <div class="text-base font-light uppercase">
@@ -780,7 +779,7 @@
           >
             <div class="w-[50px] md:w-auto grid md:justify-end lg:mr-2">
               <img
-                src="assets/footer/logo_valve_footer.png"
+                src="../assets/footer/logo_valve_footer.png"
                 class="w-full md:w-[100px]"
                 alt=""
               />
@@ -794,7 +793,7 @@
             </div>
             <div class="grid md:ml lg:ml-4 w-[50px] md:w-[200px]">
               <img
-                src="assets/footer/logo_steam_footer.png"
+                src="../assets/footer/logo_steam_footer.png"
                 class="w-full md:w-[100px]"
                 alt=""
               />

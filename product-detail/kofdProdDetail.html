@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/productDetailStyles.css">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="../assets/productDetailStyles.css">
+    <link rel="stylesheet" href="../assets/style.css">
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
@@ -14,7 +14,7 @@
       crossorigin="anonymous">
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="script.js"></script>
+    <script src="../assets/js/script.js"></script>
     <script>
         tailwind.config = {
           theme: {
@@ -36,7 +36,7 @@
           }
         }
       </script>
-    <title>Apex Legends™ on Steam</title>
+    <title>THE KING OF FIGHTERS XV on Steam</title>
 </head>
 <body>
      <!-- header -->
@@ -54,15 +54,16 @@
             class="flex justify-center items-center lg:justify-end col-span-9 lg:col-span-1"
           >
             <img
-              src="assets/login/steamlogo.png"
+              src="../assets/login/steamlogo.png"
               class="w-[9vh] sm:w-[10vh] md:w-[20vh]"
               alt=""
             />
           </div>
+  
           <div
             class="lg:block md-[18px] text-[0.8rem] mt-[0.5vh] md:text-[2vw] lg:text-[1.2vw] lg:col-span-2 hidden sm:hidden md:hidden"
           >
-            <a href="index.html" class="mr-2 hover:text-[#38a4d2]">STORE</a>
+            <a href="../homepage.html" class="mr-2 hover:text-[#38a4d2]">STORE</a>
             <a href="" class="mr-2 hover:text-[#38a4d2]">COMMUNITY</a>
             <a href="" class="mr-2 hover:text-[#38a4d2]">ABOUT</a>
             <a href="" class="mr-2 hover:text-[#38a4d2]">SUPPORT</a>
@@ -106,7 +107,7 @@
         <div class="h-full text-[0.6rem] lg:text-[18px]">
           <div class="w-[13vw] md:w-auto grid md:justify-end lg:mr-2">
             <img
-              src="assets/footer/logo_valve_footer.png"
+              src="../assets/footer/logo_valve_footer.png"
               class="w-full md:w-[100px]"
               alt=""
             />
@@ -128,11 +129,18 @@
       <!-- Footer end -->
     </div>
 <!-- Hamburger Menu end -->
-    <div id="container" class="bg-steamBg text-headerFontColor p-60 pt-0">
+    <div id="container" class="bg-steamBg text-headerFontColor p-60 pt-2">
+        <!-- Cart -->
+        <div class="flex justify-end text-xs mb-1">
+            <a href="cart.html" class="bg-[#5c7e10] px-6 py-1 text-center hover:bg-[#7ea64b] text-white">
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i> <span>Cart (1)</span>
+            </a>
+        </div>
+        <!-- End Cart -->
         <div class="navBar">
             <div class="grid grid-cols-3 p-1 md:p-4">
               <div class="col-span-2">
-                <a href="homepage.html" class="mr-2 hover:text-[#38a4d2]">Your Store</a>
+                <a href="../homepage.html" class="mr-2 hover:text-[#38a4d2]">Your Store</a>
                 <a href="" class="mr-2 hover:text-[#38a4d2]">New & Noteworthy</a>
                 <a href="" class="mr-2 hover:text-[#38a4d2]">Categories</a>
                 <a href="" class="mr-2 hover:text-[#38a4d2]">Point Shop</a>
@@ -154,24 +162,21 @@
         <div id="directory" class="text-fontColor text-sm mt-16">
             <p><a href="">All Games</a> &#62;
                 <a href="">Action Games</a> &#62;
-                <a href="">Electronic Arts Franchise</a> &#62;
-                <a href="">Apex Legends™</a>
+                <a href="">THE KING OF FIGHTERS XV</a>
             </p>
         </div>
     <div id="gameName" class="flex justify-between">
-        <h1 class="text-3xl mb-4">Apex Legends™</h1>
+        <h1 class="text-3xl mb-4">THE KING OF FIGHTERS XV</h1>
             <a href="">
                 <button class="bg-buttonColorBg text-buttonColor pt-2 pr-4 pb-2 pl-4 rounded-sm">Community Hub</button>
             </a>
 </div>
     <div id="headerBg" class="flex flex-row-reverse pb-4 max-w-full max-h-full">
         <div id="sideDesc" class="ml-4 min-w-60 w-screen max-w-full max-h-full">
-            <img src="https://cdn.akamai.steamstatic.com/steam/apps/1172470/header.jpg?t=1708706824" alt="header" class="min-w-full">
-            <p class="mobileH1 text-3xl mt-4">Apex Legends™</p>
+            <img src="https://cdn.akamai.steamstatic.com/steam/apps/1498570/header.jpg?t=1701397336" alt="header" class="min-w-full">
+            <p class="mobileH1 text-3xl mt-4">THE KING OF FIGHTERS XV</p>
                 <div class="quickDesc">
-                    <p class="text-sm my-2"> Apex Legends is the award-winning, free-to-play Hero Shooter from Respawn Entertainment. 
-                        Master an ever-growing roster of legendary characters with powerful abilities, and experience strategic squad 
-                        play and innovative gameplay in the next evolution of Hero Shooter and Battle Royale.
+                    <p class="text-sm my-2"> SHATTER ALL EXPECTATIONS! Transcend beyond your limits with KOF XV!
                     </p>
                 </div>
             <div class="reviews flex text-xs">
@@ -183,32 +188,33 @@
                     <p><a href="">Publisher:</a></p>
                 </div>
                 <div class="reviewsScore ml-4 text-buttonColor flex flex-col">
-                    <span class="text-mixed">Mixed</span>
-                    <span>Mostly Positive</span>
-                    <span class="text-fontColor leading-8">5 Nov, 2020</span>
-                    <span>Respawn Entertainment</span>
-                    <span>Electronic Arts</span>
+                    <span>Very Positive</span>
+                    <span>Very Positive</span>
+                    <span class="text-fontColor leading-8">17 Feb, 2022</span>
+                    <span>SNK CORPORATION</span>
+                    <span>SNK CORPORATION</span>
                 </div>
             </div>
             <div class="genreTag mt-2 mb-2 text-xs w-full">
                 <p class="text-fontColor">Popular user-defined tags for this product:</p>
-                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Free To Play</a></span>
-                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Battle Royale</a></span>
+                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">2D Fighter</a></span>
+                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Action</a></span>
+                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Fighting</a></span>
+                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">PVP</a></span>
                     <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Multiplayer</a></span>
-                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">FPS</a></span>
                     <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">&#43;</a></span>
             </div>
         </div>
         <div id="mainVideo" class="max-w-full max-h-full">
             <video controls>
-                <source src="https://cdn.akamai.steamstatic.com/steam/apps/257000621/movie_max_vp9.webm?t=1707847985" type="video/webm">
+                <source src="https://cdn.akamai.steamstatic.com/steam/apps/256869158/movie_max_vp9.webm?t=1643680783" type="video/webm">
             </video>
             <div class="thumbnails flex justify-between gap-1 mt-1 overflow-scroll">
-                <img src="https://cdn.akamai.steamstatic.com/steam/apps/1172470/ss_b5051a24edf949582756c313eebf6f61582ce25f.116x65.jpg?t=1708706824">
-                <img src="https://cdn.akamai.steamstatic.com/steam/apps/1172470/ss_ed4087e1f7e85905df637304ac4e511def7943e7.116x65.jpg?t=1708706824">
-                <img src="https://cdn.akamai.steamstatic.com/steam/apps/1172470/ss_d83cbff470fc50074354e342554bb0f95873c4cd.116x65.jpg?t=1708706824">
-                <img src="https://cdn.akamai.steamstatic.com/steam/apps/1172470/ss_98f91773af2d5b05d885bc39b13336e7acb23b0b.116x65.jpg?t=1708706824">
-                <img src="https://cdn.akamai.steamstatic.com/steam/apps/1172470/ss_addcfffc4cb07dbde19cd033759054138aa2bc62.116x65.jpg?t=1708706824">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1498570/ss_a78f803bb251e541225b0d82b8c7ce30fc823bdd.116x65.jpg?t=1701397336">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1498570/ss_67261dc701d58d1cdb581e155fb7185c7e8d6c90.116x65.jpg?t=1701397336">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1498570/ss_303a91a683131f7deb6e07c304c48ccaf1c4edf1.116x65.jpg?t=1701397336">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1498570/ss_5db4fb0fa25d185dcb1fa3a11282defbc50b3ad2.116x65.jpg?t=1701397336">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1498570/ss_28bef49100051d79223b650bb2cc02155015bc7f.116x65.jpg?t=1701397336">
             </div>
     </div>
     </div>
@@ -538,7 +544,7 @@
             </div>
             <div class="gameAchievement p-4 text-greyFontColor text-xs">
                 <p>Include 1 Steam Achievements</p>
-                <img src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/1172470/03754c9a8c98ec9362e245a8bd0e8cdbb2e22aea.jpg"
+                <img src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1498570/2c7f755e6a4e2e2febfdcb295ad79a9769886f45.jpg"
                     class="mt-4 w-16 h-16">
             </div>
             <div class="pointShop max-w-full max-h-screen my-2 p-4">
@@ -555,12 +561,12 @@
             </div>
             </div>
             <div class="prodGenre p-5 w-full text-xs">
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Title:</span> Apex Legends™</p>
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Genre:</span><a href=""> Action, Adventure, Free to Play</a>,<a href=""> Free to Play</a></p>
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Developer:</span> <a href=""> Respawn Entertainment</a></p>
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Publisher:</span> <a href=""> Electronic Arts</a></p>
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Franchise:</span> <a href=""> Apex Legends</a></p>
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Release Date:</span> 5 Nov, 2020</p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Title:</span> THE KING OF FIGHTERS XV</p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Genre:</span><a href="">Action</a></p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Developer:</span> <a href=""> SNK CORPORATION</a></p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Publisher:</span> <a href=""> SNK CORPORATION</a></p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Franchise:</span> <a href=""> THE KING OF FIGHTERS</a></p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Release Date:</span> 17 Feb, 2022</p>
                     <div class="genreButtonHeader">
                         <div class="genreButton bg-blueItemBg text-buttonColor p-1 mb-1 rounded-sm">
                             <span><a href="" class="text-buttonColor">Visit the website</a></span>
@@ -611,22 +617,30 @@
     </div>
 <div id="cardWrapper">
     <div class="card p-4 mt-6 mb-2 rounded relative">
-            <h2 class="text-2xl font-semibold">Play Apex Legends™</h2>
+            <h2 class="text-2xl font-semibold">Buy THE KING OF FIGHTERS XV Standard Edition</h2>
         <div class="gamePurchaseContainer text-base text-right absolute right-1">
             <div class="gamePurchaseButton py-2.5 pl-4 pr-0 bg-black rounded">
-                <span>Free To Play <span class="gamePurchase m-1 bg-buyBg py-2 px-4 rounded"><a href="">Play Game</a></span></span>
+                <span>Rp 829 000 <span class="gamePurchase m-1 bg-buyBg py-2 px-4 rounded"><a href="">Add to Cart</a></span></span>
             </div>
         </div>
     </div>
+    <div class="card p-4 mt-6 mb-2 rounded relative">
+        <h2 class="text-2xl font-semibold">Buy THE KING OF FIGHTERS XV Deluxe Edition</h2>
+    <div class="gamePurchaseContainer text-base text-right absolute right-1">
+        <div class="gamePurchaseButton py-2.5 pl-4 pr-0 bg-black rounded">
+            <span>Rp 1 129 000 <span class="gamePurchase m-1 bg-buyBg py-2 px-4 rounded"><a href="">Add to Cart</a></span></span>
+        </div>
+    </div>
+</div>
         <div class="eventHeader mt-24 text-sm font-medium uppercase">
             <span>Recent Events &#38; Announcements <span class="browseButton py-0.5 px-2 mb-0.5 text-xs float-right capitalize">View All</span></span>
         </div>
     <div id="wrapper">
         <div class="w-full h-full">
-            <img src="https://clan.akamai.steamstatic.com/images/38098458/29636febeb54f7dd5d29da022e4c8267b7b5483b_400x225.jpg" alt="">
+            <img src="https://cdn.akamai.steamstatic.com/steam/apps/1498570/header.jpg" alt="">
         </div>
         <div class="w-full h-full">
-            <img src="https://clan.akamai.steamstatic.com/images/38098458/29636febeb54f7dd5d29da022e4c8267b7b5483b_400x225.jpg" alt="">
+            <img src="https://cdn.akamai.steamstatic.com/steam/apps/1498570/header.jpg" alt="">
         </div>
     </div>
         <div class="moreButton flex mt-4 mb-8">
@@ -652,35 +666,85 @@
             </svg>
             <a href=""><p class="text-xs rounded-sm py-0.5 px-4 ml-2">See all updates &#40;Latest&#8758; Mar 9&#41;</p></a>
         </div>
-        <div class="gameDesc text-greyFontColor">
-            <span class="text-white text-xl uppercase">Play Apex Legends Today!</span>
-            <hr>
-            <img src="https://cdn.akamai.steamstatic.com/steam/apps/1172470/extras/EA_GLO_STEAM_APEX_S20_HIGHLIGHTS_LOCA_EN.jpg?t=1708706824" 
-                alt="gamePromotion"
-                class="w-full my-4">
-        </div>
     <div class="gameDesc text-greyFontColor">
         <span class="text-white text-xl">About this game</span>
         <hr>
-        <p class="text-base mt-4 mb-6">Conquer with character in Apex Legends, a free-to-play* Hero shooter where legendary characters
-             with powerful abilities team up to battle for fame & fortune on the fringes of the Frontier.
+        <p class="text-base mt-4 mb-6">
+            [Product Contents]
+            <br>
+            THE KING OF FIGHTERS XV Standard Edition
+            <br>
+            - "THE KING OF FIGHTERS XV" Base game
+            <br>
+            [Special Bonus]
+            <br>
+            - Exclusive Bonus
+            <br>
+            KOF XV DLC Costume "CLASSIC LEONA"
+            <br>
+            ------------------
+            <br>
+            THE KING OF FIGHTERS XV Deluxe Edition
+            <br>
+            [Product Contents]
+            <br>
+            - "THE KING OF FIGHTERS XV" Base game
+            <br>
+            - KOF XV DLC Characters "Team GAROU"
+            <br>
+            - KOF XV DLC Characters "Team SOUTH TOWN"
+            <br>
+            
+            [Special Bonus]
+            <br>
+            - Exclusive Bonus
+            <br>
+            KOF XV DLC Costume "CLASSIC LEONA"
+            <br>
+            
+            ------------------
+            <br>
+            [Game Content]
+            <br>
+            SHATTER ALL EXPECTATIONS!
+            <br>
+            Transcend beyond your limits with KOF XV!
+            <br>
+            Since its debut in 1994, the KOF fighting game series has been driving the world to new heights of excitement with its appealing 
+            characters and unique game system. Six years have passed since the last title in the series, and now KOF XV surpasses all of its
+             predecessors in terms of graphics, systems, and online experience!
         </p>
-        <p class="text-base mt-4 mb-6"> Master an ever-growing roster of diverse Legends, deep-tactical squad play, and bold, new innovations 
-            that go beyond the Battle Royale experience — all within a rugged world where anything goes. Welcome to the next evolution of Hero 
-            Shooter.
+        <img src="https://cdn.akamai.steamstatic.com/steam/apps/1498570/extras/★製品トレーラー_海外_GIF01.gif?t=1701397336" alt="gameDesc" class="w-full">
+        <p class="text-base mt-4 mb-6">
+            - A total of 39 playable fighters at launch!
+            <br>
+            Classic popular characters, heroes and villains revived from the dead, new challengers, and more! The most epic dream match in 
+            KOF history is about to begin!
+            <br>
+            - KOF's story reaches its climax!
+            <br>
+            The latest KOF Saga continues from the previous title in Story Mode. This time, the story is coming to an explosive climax!
         </p>
-        <span class="text-white text-xl uppercase">Key Features</span>
-        <img src="https://cdn.akamai.steamstatic.com/steam/apps/1172470/extras/EA_APEX_STEAM-PDP_EN.jpg?t=1708706824" alt="gameDesc" class="w-full">
-        <p class="text-base mt-4 mb-6">This game includes optional in-game purchases of virtual currency that can be used to acquire virtual
-             in-game items, including a random selection of virtual in-game items.
-        </p>
-        <p class="text-base mt-4 mb-6">Note that any unused Apex Coins will expire 180 days after the first date in which they are acquired 
-            or purchased. The oldest Apex Coins that are subject to expiration in your balance will always be used first when using them to make 
-            in-game purchases.
+        <img src="https://cdn.akamai.steamstatic.com/steam/apps/1498570/extras/★製品トレーラー_海外_GIF03.gif?t=1701397336" alt="gameDesc" class="w-full">
+        <p class="text-base mt-4 mb-6">
+            - The culmination of the series' battle system
+            <br>
+            Inheriting the series' traditional 3-on-3 team battle, KOF XV also features the exciting new “SHATTER STRIKE” mechanic. Enjoy an unprecedented sense of speed and hype fighting game action!
+            <br>
+            - Easy and versatile online play
+            <br>
+            KOF XV features rollback netcode. There are also a variety of battle options that allow you to choose how you want to play!
        </p>
-       <p class="text-base mt-4 mb-6">Apex Packs purchase is not available in Belgium.
+       <img src="https://cdn.akamai.steamstatic.com/steam/apps/1498570/extras/★製品トレーラー_海外_GIF02.gif?t=1701397336" alt="gameDesc" class="w-full">
+       <p class="text-base mt-4 mb-6">- KOF XV is fully packed with content to enjoy
+        <br>
+        Includes a Gallery with movies and voice samples, and a new DJ STATION with over 300 popular songs from the KOF series and more.
    </p>
-
+   <span class="text-white text-xl">Mature Content Description</span>
+        <hr>
+        <p class="text-base mt-4 mb-6">The developers describe the content like this&#8758;</p>
+        <p class="text-base mt-4 mb-6"><i>This Game may contain content not appropriate for all ages, or may not be appropriate for viewing 
+            at work: Some Nudity or Sexual Content, General Mature Content</i></p>
     </div>
     <div class="max-w-4xl rounded">
         <div class="text-base font-light uppercase">
@@ -745,7 +809,7 @@
           >
             <div class="w-[50px] md:w-auto grid md:justify-end lg:mr-2">
               <img
-                src="assets/footer/logo_valve_footer.png"
+                src="../assets/footer/logo_valve_footer.png"
                 class="w-full md:w-[100px]"
                 alt=""
               />
@@ -759,7 +823,7 @@
             </div>
             <div class="grid md:ml lg:ml-4 w-[50px] md:w-[200px]">
               <img
-                src="assets/footer/logo_steam_footer.png"
+                src="../assets/footer/logo_steam_footer.png"
                 class="w-full md:w-[100px]"
                 alt=""
               />

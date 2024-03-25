@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/productDetailStyles.css">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="../assets/productDetailStyles.css">
+    <link rel="stylesheet" href="../assets/style.css">
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="assets/style.css"
+      rel="stylesheet"
     />
     <script
       src="https://kit.fontawesome.com/de991fd127.js"
       crossorigin="anonymous">
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="script.js"></script>
+    <script src="../assets/js/script.js"></script>
     <script>
         tailwind.config = {
           theme: {
@@ -36,7 +36,7 @@
           }
         }
       </script>
-    <title>Blade and Sorcery on Steam</title>
+    <title>Pistol Whip on Steam</title>
 </head>
 <body>
      <!-- header -->
@@ -54,7 +54,7 @@
             class="flex justify-center items-center lg:justify-end col-span-9 lg:col-span-1"
           >
             <img
-              src="assets/login/steamlogo.png"
+              src="../assets/login/steamlogo.png"
               class="w-[9vh] sm:w-[10vh] md:w-[20vh]"
               alt=""
             />
@@ -63,7 +63,7 @@
           <div
             class="lg:block md-[18px] text-[0.8rem] mt-[0.5vh] md:text-[2vw] lg:text-[1.2vw] lg:col-span-2 hidden sm:hidden md:hidden"
           >
-            <a href="index.html" class="mr-2 hover:text-[#38a4d2]">STORE</a>
+            <a href="../homepage.html" class="mr-2 hover:text-[#38a4d2]">STORE</a>
             <a href="" class="mr-2 hover:text-[#38a4d2]">COMMUNITY</a>
             <a href="" class="mr-2 hover:text-[#38a4d2]">ABOUT</a>
             <a href="" class="mr-2 hover:text-[#38a4d2]">SUPPORT</a>
@@ -107,7 +107,7 @@
         <div class="h-full text-[0.6rem] lg:text-[18px]">
           <div class="w-[13vw] md:w-auto grid md:justify-end lg:mr-2">
             <img
-              src="assets/footer/logo_valve_footer.png"
+              src="../assets/footer/logo_valve_footer.png"
               class="w-full md:w-[100px]"
               alt=""
             />
@@ -129,11 +129,18 @@
       <!-- Footer end -->
     </div>
 <!-- Hamburger Menu end -->
-    <div id="container" class="bg-steamBg text-headerFontColor p-60 pt-0">
+    <div id="container" class="bg-steamBg text-headerFontColor p-60 pt-2">
+        <!-- Cart -->
+        <div class="flex justify-end text-xs mb-1">
+            <a href="cart.html" class="bg-[#5c7e10] px-6 py-1 text-center hover:bg-[#7ea64b] text-white">
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i> <span>Cart (1)</span>
+            </a>
+        </div>
+        <!-- End Cart -->
         <div class="navBar">
             <div class="grid grid-cols-3 p-1 md:p-4">
               <div class="col-span-2">
-                <a href="homepage.html" class="mr-2 hover:text-[#38a4d2]">Your Store</a>
+                <a href="../homepage.html" class="mr-2 hover:text-[#38a4d2]">Your Store</a>
                 <a href="" class="mr-2 hover:text-[#38a4d2]">New & Noteworthy</a>
                 <a href="" class="mr-2 hover:text-[#38a4d2]">Categories</a>
                 <a href="" class="mr-2 hover:text-[#38a4d2]">Point Shop</a>
@@ -155,22 +162,23 @@
         <div id="directory" class="text-fontColor text-sm mt-16">
             <p><a href="">All Games</a> &#62;
                 <a href="">Action Games</a> &#62;
-                <a href="">Blade and Sorcery</a>
+                <a href="">Pistol Whip</a>
             </p>
         </div>
     <div id="gameName" class="flex justify-between">
-        <h1 class="text-3xl mb-4">Blade and Sorcery</h1>
+        <h1 class="text-3xl mb-4">Pistol Whip</h1>
             <a href="">
                 <button class="bg-buttonColorBg text-buttonColor pt-2 pr-4 pb-2 pl-4 rounded-sm">Community Hub</button>
             </a>
 </div>
     <div id="headerBg" class="flex flex-row-reverse pb-4 max-w-full max-h-full">
         <div id="sideDesc" class="ml-4 min-w-60 w-screen max-w-full max-h-full">
-            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/629730/header.jpg?t=1701774481" alt="header" class="min-w-full">
-            <p class="mobileH1 text-3xl mt-4">Blade and Sorcery</p>
+            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1079800/header.jpg?t=1709311461" alt="header" class="min-w-full">
+            <p class="mobileH1 text-3xl mt-4">Pistol Whip</p>
                 <div class="quickDesc">
-                    <p class="text-sm my-2">Blade & Sorcery is a built-for-VR medieval fantasy sandbox with full physics driven melee, 
-                        ranged and magic combat. Become a powerful warrior, ranger or sorcerer and devastate your enemies.
+                    <p class="text-sm my-2">Enter: the ultimate action hero. Pistol Whip is a physical action-rhythm game where film-inspired 
+                        gunplay and blood-pumping beats collide. Blast, duck and dodge your way through fever dream Scenes, build unique rhythms 
+                        in a ballet of bullets and claim glory on the leaderboards. Includes mod support!
                     </p>
                 </div>
             <div class="reviews flex text-xs">
@@ -182,33 +190,34 @@
                     <p><a href="">Publisher:</a></p>
                 </div>
                 <div class="reviewsScore ml-4 text-buttonColor flex flex-col">
-                    <span>Overwhemingly Positive</span>
-                    <span>Overwhemingly Positive</span>
-                    <span class="text-fontColor leading-8">11 Dec, 2018</span>
-                    <span>WarpFrog</span>
-                    <span>WarpFrog</span>
+                    <span>Very Positive</span>
+                    <span>Very Positive</span>
+                    <span class="text-fontColor leading-8">7 Nov, 2019</span>
+                    <span>Cloudhead Games Ltd.</span>
+                    <span>Cloudhead Games Ltd.</span>
                 </div>
             </div>
             <div class="genreTag mt-2 mb-2 text-xs w-full">
                 <p class="text-fontColor">Popular user-defined tags for this product:</p>
                     <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">VR</a></span>
-                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">SwordPlay</a></span>
                     <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Action</a></span>
-                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Moddable</a></span>
-                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Gore</a></span>
+                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Rhythm</a></span>
+                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Shooter</a></span>
+                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Arcade</a></span>
+                    <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">Indie</a></span>
                     <span class="text-buttonColor bg-greyBg rounded-sm py-1 px-1.5"><a href="">&#43;</a></span>
             </div>
         </div>
         <div id="mainVideo" class="max-w-full max-h-full">
             <video controls>
-                <source src="https://cdn.cloudflare.steamstatic.com/steam/apps/256857498/movie_max_vp9.webm?t=1635255825" type="video/webm">
+                <source src="https://cdn.cloudflare.steamstatic.com/steam/apps/256921527/movie_max_vp9.webm?t=1702324573" type="video/webm">
             </video>
             <div class="thumbnails flex justify-between gap-1 mt-1 overflow-scroll">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/629730/ss_1fab2d23d93d5b6e30a097b15d1854d65a7b5726.116x65.jpg?t=1701774481">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/629730/ss_aa84f60594357440c74c7a93e512a67547ba1627.116x65.jpg?t=1701774481">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/629730/ss_98cb3b4ef9981f001a4cd36a7d1ed0d166635a62.116x65.jpg?t=1701774481">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/629730/ss_857bd0df98cc1c86a680689e552fbd0393df4060.116x65.jpg?t=1701774481">
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/629730/ss_e2eb4990df02020a6eabd2b3afb67d8e88bdf2db.116x65.jpg?t=1701774481">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1079800/ss_a282d06f5be9bfaf5a80f7a73047e5ed3563f2ab.116x65.jpg?t=1709311461">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1079800/ss_8003a78c23c0bc180dd253fc9afda16c7e11ab5f.116x65.jpg?t=1709311461">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1079800/ss_fc8b672ce463bf86c3ca2bd1810119d1ce86937a.116x65.jpg?t=1709311461">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1079800/ss_6dfbda14cf63b67e2944ebd34f30281f41ef49ae.116x65.jpg?t=1709311461">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1079800/ss_d4b4e1f1aa1e514d1bd401ec08fd38f8c2db23ed.116x65.jpg?t=1709311461">
             </div>
     </div>
     </div>
@@ -555,12 +564,11 @@
             </div>
             </div>
             <div class="prodGenre p-5 w-full text-xs">
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Title:</span>Blade and Sorcery</p>
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Genre:</span><a href="">Action, Adventure, Indie, RPG, Simulation, Early Access</a></p>
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Developer:</span> <a href="">WarpFrog</a></p>
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Publisher:</span> <a href="">WarpFrog</a></p>
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Release Date:</span> 11 Dec, 2018</p>
-                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Early Access Release Date:</span> 11 Dec, 2018</p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Title:</span>Pistol Whip</p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Genre:</span><a href="">Action, Indie</a></p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Developer:</span> <a href="">Cloudhead Games Ltd.</a></p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Publisher:</span> <a href="">Cloudhead Games Ltd.</a></p>
+                        <p class="text-headerFontColor leading-6"><span class="text-fontColor uppercase">Release Date:</span> 7 Nov, 2019</p>
                     <div class="genreButtonHeader">
                         <div class="genreButton bg-blueItemBg text-buttonColor p-1 mb-1 rounded-sm">
                             <span><a href="" class="text-buttonColor">Visit the website</a></span>
@@ -611,66 +619,110 @@
     </div>
 <div id="cardWrapper">
     <div class="card p-4 mt-6 mb-2 rounded relative">
-            <h2 class="text-2xl font-semibold">Buy Blade & Sorcery</h2>
+            <h2 class="text-2xl font-semibold">Buy Pistol Whip</h2>
         <div class="gamePurchaseContainer text-base text-right absolute right-1">
             <div class="gamePurchaseButton py-2.5 pl-4 pr-0 bg-black rounded">
-                <span>Rp 108 999<span class="gamePurchase m-1 bg-buyBg py-2 px-4 rounded"><a href="">Add to Cart</a></span></span>
+                <span>Rp 245 999 <span class="gamePurchase m-1 bg-buyBg py-2 px-4 rounded"><a href="">Add to Cart</a></span></span>
             </div>
         </div>
     </div>
-    <div class="eventHeader mt-24 text-sm font-medium uppercase">
-        <span>Recent Events &#38; Announcements <span class="browseButton py-0.5 px-2 mb-0.5 text-xs float-right capitalize">View All</span></span>
+    <div class="card p-4 mt-6 rounded relative">
+        <h4 class="text-2xl font-semibold">Buy Pistol Whip + Soundtrack <span class="bundle text-buttonColor font-extralight">Bundle <span class="tooltip text-greyFontColor text-xs">&#40;?&#41;</span></span></h4>    
+            <p class="text-sm">Buy this bundle to save 10% off all 3 items!</p>
+            <div class="bundleImg flex overflow-clip bg-black">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1079800/capsule_sm_120.jpg?t=1709311461" alt="">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1190950/capsule_sm_120.jpg?t=1695861145" alt="">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1567510/capsule_sm_120.jpg?t=1695861190" alt="">
+            </div>
+            <div class="bundleInfo text-sm rounded-sm py-2 px-4 absolute m-1 right-[20vw]">
+                <span><a href="">Bundle info</a></span>
+            </div>
+        <div class="gamePurchaseContainer text-base text-right absolute right-1">
+            <div class="gamePurchaseButton m-1 py-2 px-2 bg-black rounded">
+                <span>Rp 399 597<span class="gamePurchase m-1 bg-buyBg py-2 px-4 rounded"><a href="">Add To Cart</span></a></span>
+            </div>
+        </div>
     </div>
-<div id="wrapper">
-    <div class="w-full h-full">
-        <img src="https://clan.cloudflare.steamstatic.com/images/33834682/ac248746272da65b73b1a72e72cdc442a24eeab0_400x225.jpg" alt="">
+    <div class="contentHeader mt-24 text-sm font-medium uppercase">
+        <span>Content for this game <span class="browseButton py-0.5 px-2 mb-0.5 text-xs float-right capitalize"><a href="">Browse all &#40;1&#41;</a></span></span> 
     </div>
-    <div class="w-full h-full">
-        <img src="https://clan.cloudflare.steamstatic.com/images/33834682/8534c27cb12e5476315d8bf9a37dd2ca0ff9b39d_400x225.jpg" alt="">
+    <div class="content text-xs">
+        <a href="" class="ml-4">Pistol Whip Official Soundtrack Vol. 1<span class="float-right mr-4">Rp 106 999</span></a>
     </div>
-</div>
-    <div class="moreButton flex mt-4 mb-8">
-        <svg height="100px" 
-                width="100px" 
-                viewBox="0 0 100 100"  
-                fill="currentColor"
-                class="w-6 h-6">
-                <g>
-                    <path d="M34.367,31.803c0.49,0.443,1.228,0.404,1.698-0.06c3.869-3.823,8.894-6.045,14.425-6.337   
-                    c11.044-0.495,20.558,7.281,22.518,17.866c0.133,0.717-0.429,1.379-1.157,1.413l-4.83,0.223c-1.092,0.05-1.578,1.397-0.769,2.133   
-                    l13.999,12.733c0.502,0.456,1.279,0.419,1.734-0.084L94.68,45.676c0.733-0.809,0.123-2.1-0.967-2.048l-6.486,0.309   
-                    c-1.82-18.94-18.238-33.327-37.455-32.439c-9.122,0.484-17.619,4.28-23.984,10.844c-0.48,0.495-0.439,1.299,0.072,1.762   
-                    L34.367,31.803z">
-                    </path>
-                    <path d="M6.229,53.869h6.11c0.622,0,1.132,0.468,1.207,1.085c1.029,8.437,4.787,16.288,10.854,22.357   
-                    c7.249,7.217,16.85,11.23,27.047,11.23c9.778,0.07,19.009-3.568,26.131-10.258c0.502-0.471,0.502-1.276,0.015-1.763l-9.587-9.587   
-                    c-4.379,4.389-10.288,6.838-16.559,6.838c-6.224,0-12.068-2.506-16.541-6.934c-3.179-3.179-5.282-7.178-6.168-11.481   
-                    c-0.154-0.746,0.447-1.436,1.209-1.436h5.183c1.092,0,1.639-1.319,0.869-2.092L21.572,37.352c-0.478-0.48-1.255-0.481-1.734-0.003   
-                    L5.363,51.773C4.589,52.545,5.135,53.869,6.229,53.869z">
-        </path>
-        </g>
-        </svg>
-        <a href=""><p class="text-xs rounded-sm py-0.5 px-4 ml-2">See all updates &#40;Latest&#8758; Mar 9&#41;</p></a>
+    <div class="content text-xs mt-0.5">
+        <a href="" class="ml-4">Pistol Whip Official Soundtrack Vol. 2<span class="float-right mr-4">Rp 90 999</span></a>
     </div>
-    <div class="gameDesc text-greyFontColor mt-8">
+        <div class="eventHeader mt-24 text-sm font-medium uppercase">
+            <span>Recent Events &#38; Announcements <span class="browseButton py-0.5 px-2 mb-0.5 text-xs float-right capitalize">View All</span></span>
+        </div>
+    <div id="wrapper">
+        <div class="w-full h-full">
+            <img src="https://clan.cloudflare.steamstatic.com/images/35882631/a34680fc91783190ad256134cf55989e65db3c21_400x225.png" alt="">
+        </div>
+        <div class="w-full h-full">
+            <img src="https://clan.cloudflare.steamstatic.com/images/35882631/bdf29b657e47e6910e0033bc58d7967ec9e7c5c3_400x225.png" alt="">
+        </div>
+    </div>
+        <div class="moreButton flex mt-4 mb-8">
+            <svg height="100px" 
+                    width="100px" 
+                    viewBox="0 0 100 100"  
+                    fill="currentColor"
+                    class="w-6 h-6">
+                    <g>
+                        <path d="M34.367,31.803c0.49,0.443,1.228,0.404,1.698-0.06c3.869-3.823,8.894-6.045,14.425-6.337   
+                        c11.044-0.495,20.558,7.281,22.518,17.866c0.133,0.717-0.429,1.379-1.157,1.413l-4.83,0.223c-1.092,0.05-1.578,1.397-0.769,2.133   
+                        l13.999,12.733c0.502,0.456,1.279,0.419,1.734-0.084L94.68,45.676c0.733-0.809,0.123-2.1-0.967-2.048l-6.486,0.309   
+                        c-1.82-18.94-18.238-33.327-37.455-32.439c-9.122,0.484-17.619,4.28-23.984,10.844c-0.48,0.495-0.439,1.299,0.072,1.762   
+                        L34.367,31.803z">
+                        </path>
+                        <path d="M6.229,53.869h6.11c0.622,0,1.132,0.468,1.207,1.085c1.029,8.437,4.787,16.288,10.854,22.357   
+                        c7.249,7.217,16.85,11.23,27.047,11.23c9.778,0.07,19.009-3.568,26.131-10.258c0.502-0.471,0.502-1.276,0.015-1.763l-9.587-9.587   
+                        c-4.379,4.389-10.288,6.838-16.559,6.838c-6.224,0-12.068-2.506-16.541-6.934c-3.179-3.179-5.282-7.178-6.168-11.481   
+                        c-0.154-0.746,0.447-1.436,1.209-1.436h5.183c1.092,0,1.639-1.319,0.869-2.092L21.572,37.352c-0.478-0.48-1.255-0.481-1.734-0.003   
+                        L5.363,51.773C4.589,52.545,5.135,53.869,6.229,53.869z">
+            </path>
+            </g>
+            </svg>
+            <a href=""><p class="text-xs rounded-sm py-0.5 px-4 ml-2">See all updates &#40;Latest&#8758; Mar 9&#41;</p></a>
+        </div>
+    <div class="gameDesc text-greyFontColor">
         <span class="text-white text-xl">About this game</span>
         <hr>
-        <p class="text-base mt-4 mb-6">The era of the VR weightless, wiggle-sword combat is over. Blade & Sorcery is a medieval
-             fantasy sandbox like no other, focusing on melee, ranged and magic combat that fully utilizes a unique and realistic physics 
-             driven interaction and combat system.
-        <p class="text-base mt-4 mb-6">Built exclusively for VR, collisions are dictated by fine hitboxes, objects have weight and 
-            follow the laws of physics, creatures have full body physics and presence, and blades can be used to penetrate soft materials 
-            or deflect magic.
+        <p class="text-base mt-4 mb-6">Winner of VR GOTY at the 2020 DICE Awards, this Physical FPS is fueled by dynamic tracks, dreamscape
+             visuals, and easy to learn, tough to master gunplay. Inspired by iconic action cinema, the only thing that goes harder than this 
+             title’s soundtrack is you. Conquer the leaderboards, flow to the music with your own rhythmic patterns, or go all out as a 
+             dual-wielding deadeye with nothing to lose.
         </p>
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/629730/extras/decals_steam.gif?t=1701774481">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/629730/extras/fire_stab_steam.gif?t=1701774481" class="mt-2">
-        <p class="text-base mt-4 mb-6">In Blade & Sorcery, the combat is limited only by your own creativity. Choose your weapon, choose your stance, 
-            choose your fighting style; Be the powerful warrior, ranger or sorcerer you always dreamed of becoming!
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1079800/extras/PW_storefront-divider_Game-features__650.png?t=1709311461">
+        <ul class="ml-4 mb-12 leading-8">
+            <li>An Action-Rhythm Rush. Take aim and fire on the beat as you barrel through Scene after Scene. Find your flow, rack up points, become 
+                unstoppable.</li>
+            <li>The Big Gun: That’s you. Take on special Scenes inspired by iconic movies, and become deadeye legend</li>
+            <li>Limitless Additional Content. Play Remixed Scenes created by the modding community directly in-game.</li>
+            <li>Absurdly Customizable. Dig into the Styles system to overhaul core mechanics to your exact preferences.
+                 Make Pistol Whip a part of your fitness routine, or tweak your loadout to fit your accessibility needs.</li>
+            <li>Endless Ways To Play. Tackle over 35 unique Scenes, bag daily Contracts challenges, and always stay tuned for the next big content update.</li>
+            <li>Cinematic Campaigns. Ride into the wild, wild west with Smoke & Thunder, or face down a technicolour Robopocalypse in 2089.</li>
+            <li>A Dancefloor Fever Dream. Fall into vivid fantasias, shimmering nightmares, and skylines that pulse with the beat—then blast your way back out.</li>
+            <li>Songs To Get Reckless To. From Devora’s furious desert rock to the driving basslines of Apashe, this soundtrack will have you feeling invincible.</li>
+        </ul>
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1079800/extras/PW_storefront-divider_remixes-mods_c_650.png?t=1709311461">
+        <p class="text-base mt-4 mb-6 text-buttonColor">Play the growing library of explosive Scenes created by the Pistol Whip modding community 
+            directly in-game. Find them in the Remixes tab!
         </p>
-        <span class="text-white text-xl">Mature Content Description</span>
-        <hr>
-        <p class="text-base mt-4 mb-6">The developers describe the content like this&#8758;</p>
-        <p class="text-base mt-4 mb-6"><i>Includes intense violence and blood</i></p>
+       <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1079800/extras/PW_PistolMix_banner_650W.jpg?t=1709311461">
+       <p class="text-base mt-4 mb-6 text-buttonColor">Pistol Mix: Official Modding Tool</p>
+       <p class="text-base mt-4 mb-6">Pistol Mix allows modders of any skill level to create a custom Remix of a Pistol Whip Scene 
+           from start to finish.
+        </p>
+        <p class="text-base mt-4 mb-6">Download the tool and create a Remixed Scene by placing enemies, obstacles, props and more.</p>
+        <p class="text-base mt-4 mb-6">Share your work-in-progress on Discord to get playtesters involved, and upload your Remix to Mod 
+            io to share it with players!
+        </p>
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1079800/extras/PW_storefront-divider_game-support__650.png?t=1709311461">
+        <p class="text-base mt-4 mb-6">If you have encountered an issue with Pistol Whip, please let our team know as soon as you can by submitting 
+            a ticket on our Help Desk.
     </div>
     <div class="max-w-4xl rounded">
         <div class="text-base font-light uppercase">
@@ -735,7 +787,7 @@
           >
             <div class="w-[50px] md:w-auto grid md:justify-end lg:mr-2">
               <img
-                src="assets/footer/logo_valve_footer.png"
+                src="../assets/footer/logo_valve_footer.png"
                 class="w-full md:w-[100px]"
                 alt=""
               />
@@ -749,7 +801,7 @@
             </div>
             <div class="grid md:ml lg:ml-4 w-[50px] md:w-[200px]">
               <img
-                src="assets/footer/logo_steam_footer.png"
+                src="../assets/footer/logo_steam_footer.png"
                 class="w-full md:w-[100px]"
                 alt=""
               />

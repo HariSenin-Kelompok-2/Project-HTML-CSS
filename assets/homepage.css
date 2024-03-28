@@ -61,6 +61,11 @@ body {
 
 .gradient-game-cards {
     background: linear-gradient(-45deg, rgba(64, 121, 153, 1) 5%, rgba(42, 62, 89, 1) 95%);
+    transition: all 10s;
+    -webkit-transition: all 10s;
+    -moz-transition: all 10s;
+    -ms-transition: all 10s;
+    -o-transition: all 10s;
 }
 .gradient-game-cards:hover {
     background: linear-gradient(to right, rgba(56, 107, 135, 1) 5%, rgba(68, 130, 163, 1) 95%);
@@ -68,4 +73,17 @@ body {
 
 .gradient-deals {
     background: linear-gradient(to bottom, #ffffff 5%, #abdaf4 95%);
+}
+
+.gradient-arrow-left {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 5%, rgba(0, 0, 0, 0) 95%);
+}
+.gradient-arrow-left:hover {
+    background: linear-gradient(to right, rgba(171, 218, 244, 0.3) 5%, rgba(171, 218, 244, 0) 95%);
+}
+.gradient-arrow-right {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.3) 95%);
+}
+.gradient-arrow-right:hover {
+    background: linear-gradient(to right, rgba(171, 218, 244, 0) 5%, rgba(171, 218, 244, 0.3) 95%);
 }
